@@ -34,3 +34,9 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+
+default_run_options[:pty] = true
+ssh_options[:forward_agent] = true
+ssh_options[:auth_methods] = ["publickey"]
+ssh_options[:keys] = ["/home/akash/projects/keys/personal/akashpinnaka/akashpinnaka-key-pair.pem"]

@@ -1175,3 +1175,1103 @@
  DEBUG [7fa0aaf8] 	
  DEBUG [7fa0aaf8] 	(See full trace by running task with --trace)
  DEBUG [7fa0aaf8] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:11:20 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4d113a6b] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [4d113a6b] Command: ~/.rvm/bin/rvm version
+ DEBUG [4d113a6b] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [4d113a6b] 	
+ DEBUG [4d113a6b] Finished in 3.523 seconds with exit status 0 (successful).
+ DEBUG [fa6f118b] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [fa6f118b] Command: ~/.rvm/bin/rvm current
+ DEBUG [fa6f118b] 	ruby-2.4.0
+ DEBUG [fa6f118b] 	
+ DEBUG [fa6f118b] Finished in 0.675 seconds with exit status 0 (successful).
+ DEBUG [90189704] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [90189704] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [90189704] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [90189704] 	
+ DEBUG [90189704] Finished in 0.772 seconds with exit status 0 (successful).
+  INFO [57e1de3a] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [57e1de3a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [57e1de3a] Finished in 3.168 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [198b778e] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [198b778e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [198b778e] Finished in 0.511 seconds with exit status 0 (successful).
+  INFO [b2a05844] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [b2a05844] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [b2a05844] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [b2a05844] 		HEAD
+  INFO [b2a05844] Finished in 3.615 seconds with exit status 0 (successful).
+  INFO [bb07a074] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [bb07a074] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [bb07a074] Finished in 3.417 seconds with exit status 0 (successful).
+  INFO [b20116c3] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [b20116c3] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [b20116c3] Finished in 3.370 seconds with exit status 0 (successful).
+  INFO [b96ef916] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [b96ef916] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [b96ef916] Finished in 3.387 seconds with exit status 0 (successful).
+ DEBUG [6c0540b1] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [6c0540b1] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [6c0540b1] Finished in 3.389 seconds with exit status 0 (successful).
+ DEBUG [49214f6d] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [49214f6d] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [49214f6d] Finished in 0.547 seconds with exit status 0 (successful).
+ DEBUG [981808fa] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [981808fa] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [981808fa] Finished in 3.333 seconds with exit status 1 (failed).
+ DEBUG [afe23e63] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [afe23e63] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [afe23e63] Finished in 3.310 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [c7794da9] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [c7794da9] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [c7794da9] Finished in 3.226 seconds with exit status 0 (successful).
+  INFO [7b33a529] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [7b33a529] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [7b33a529] Finished in 0.522 seconds with exit status 0 (successful).
+  INFO [a3357e32] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [a3357e32] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a3357e32] 	Fetching origin
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	remote: Counting objects: 9, done.[K
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	remote: Compressing objects:  33% (1/3)   [K
+ DEBUG [a3357e32] 	remote: Compressing objects:  66% (2/3)   [K
+ DEBUG [a3357e32] 	remote: Compressing objects: 100% (3/3)   [K
+ DEBUG [a3357e32] 	remote: Compressing objects: 100% (3/3), done.[K
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	remote: Total 9 (delta 5), reused 9 (delta 5), pack-reused 0[K
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	Unpacking objects:  11% (1/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  22% (2/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  33% (3/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  44% (4/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  55% (5/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  66% (6/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  77% (7/9)   
+ DEBUG [a3357e32] 	Unpacking objects:  88% (8/9)   
+ DEBUG [a3357e32] 	Unpacking objects: 100% (9/9)   
+ DEBUG [a3357e32] 	Unpacking objects: 100% (9/9), done.
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	From https://github.com/akashpinnaka/deploy_test
+ DEBUG [a3357e32] 	
+ DEBUG [a3357e32] 	   4a2a35d..52d53fb  master     -> master
+ DEBUG [a3357e32] 	
+  INFO [a3357e32] Finished in 0.791 seconds with exit status 0 (successful).
+ DEBUG [500de24c] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [500de24c] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [500de24c] Finished in 3.370 seconds with exit status 0 (successful).
+  INFO [b21543d4] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151 as ubuntu@52.24.162.208
+ DEBUG [b21543d4] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151 )
+  INFO [b21543d4] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [7d582f7b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502184151 as ubuntu@52.24.162.208
+ DEBUG [7d582f7b] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502184151 )
+  INFO [7d582f7b] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG [ec0d7a57] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [ec0d7a57] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [ec0d7a57] Finished in 3.503 seconds with exit status 0 (successful).
+ DEBUG [ba785903] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [ba785903] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ba785903] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [ba785903] 	
+ DEBUG [ba785903] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG [bf0b56a0] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502184151; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502184151'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [bf0b56a0] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502184151; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502184151'" 1>&2; false; fi
+ DEBUG [bf0b56a0] Finished in 3.368 seconds with exit status 0 (successful).
+  INFO [d9a6728a] Running /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [d9a6728a] Command: cd /home/ubuntu/deplot_test/releases/20170502184151 && /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION
+  INFO [d9a6728a] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [43ac7e3b] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151/config as ubuntu@52.24.162.208
+ DEBUG [43ac7e3b] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151/config
+  INFO [43ac7e3b] Finished in 3.196 seconds with exit status 0 (successful).
+ DEBUG [1a94c80a] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [1a94c80a] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml ]
+ DEBUG [1a94c80a] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [a3787264] Running [ -f /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [a3787264] Command: [ -f /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml ]
+ DEBUG [a3787264] Finished in 0.515 seconds with exit status 1 (failed).
+  INFO [ca20e2be] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [ca20e2be] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502184151/config/database.yml
+  INFO [ca20e2be] Finished in 0.519 seconds with exit status 0 (successful).
+ DEBUG [c2095269] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [c2095269] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml ]
+ DEBUG [c2095269] Finished in 0.516 seconds with exit status 1 (failed).
+ DEBUG [fc7be5a0] Running [ -f /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [fc7be5a0] Command: [ -f /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml ]
+ DEBUG [fc7be5a0] Finished in 0.514 seconds with exit status 1 (failed).
+  INFO [a4d08334] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [a4d08334] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502184151/config/secrets.yml
+  INFO [a4d08334] Finished in 0.517 seconds with exit status 0 (successful).
+  INFO [4a4b3deb] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151 /home/ubuntu/deplot_test/releases/20170502184151/tmp /home/ubuntu/deplot_test/releases/20170502184151/vendor /home/ubuntu/deplot_test/releases/20170502184151/public as ubuntu@52.24.162.208
+ DEBUG [4a4b3deb] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502184151 /home/ubuntu/deplot_test/releases/20170502184151/tmp /home/ubuntu/deplot_test/releases/20170502184151/vendor /home/ubuntu/deplot_test/releases/20170502184151/public
+  INFO [4a4b3deb] Finished in 3.200 seconds with exit status 0 (successful).
+ DEBUG [4502f33d] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/log ] as ubuntu@52.24.162.208
+ DEBUG [4502f33d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/log ]
+ DEBUG [4502f33d] Finished in 0.514 seconds with exit status 1 (failed).
+ DEBUG [692a4098] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/log ] as ubuntu@52.24.162.208
+ DEBUG [692a4098] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/log ]
+ DEBUG [692a4098] Finished in 0.514 seconds with exit status 0 (successful).
+  INFO [2850e135] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502184151/log as ubuntu@52.24.162.208
+ DEBUG [2850e135] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502184151/log
+  INFO [2850e135] Finished in 0.515 seconds with exit status 0 (successful).
+  INFO [ee1ffe7b] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502184151/log as ubuntu@52.24.162.208
+ DEBUG [ee1ffe7b] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502184151/log
+  INFO [ee1ffe7b] Finished in 0.515 seconds with exit status 0 (successful).
+ DEBUG [53a08872] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [53a08872] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids ]
+ DEBUG [53a08872] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [c32ee7ab] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [c32ee7ab] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids ]
+ DEBUG [c32ee7ab] Finished in 0.515 seconds with exit status 1 (failed).
+  INFO [d86982d2] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [d86982d2] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502184151/tmp/pids
+  INFO [d86982d2] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [a32cf091] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [a32cf091] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache ]
+ DEBUG [a32cf091] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [6a952acf] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [6a952acf] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache ]
+ DEBUG [6a952acf] Finished in 0.516 seconds with exit status 1 (failed).
+  INFO [e2d0c242] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [e2d0c242] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502184151/tmp/cache
+  INFO [e2d0c242] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [eac0e916] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [eac0e916] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets ]
+ DEBUG [eac0e916] Finished in 0.518 seconds with exit status 1 (failed).
+ DEBUG [0729d49b] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [0729d49b] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets ]
+ DEBUG [0729d49b] Finished in 0.518 seconds with exit status 1 (failed).
+  INFO [c69cd145] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [c69cd145] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502184151/tmp/sockets
+  INFO [c69cd145] Finished in 0.518 seconds with exit status 0 (successful).
+ DEBUG [42060209] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [42060209] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle ]
+ DEBUG [42060209] Finished in 0.516 seconds with exit status 1 (failed).
+ DEBUG [249103db] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [249103db] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle ]
+ DEBUG [249103db] Finished in 0.516 seconds with exit status 1 (failed).
+  INFO [4ab47a4e] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [4ab47a4e] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502184151/vendor/bundle
+  INFO [4ab47a4e] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [cf27680c] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/system ] as ubuntu@52.24.162.208
+ DEBUG [cf27680c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/system ]
+ DEBUG [cf27680c] Finished in 0.516 seconds with exit status 1 (failed).
+ DEBUG [9c4e3910] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/system ] as ubuntu@52.24.162.208
+ DEBUG [9c4e3910] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/system ]
+ DEBUG [9c4e3910] Finished in 0.514 seconds with exit status 1 (failed).
+  INFO [7656a4dc] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502184151/public/system as ubuntu@52.24.162.208
+ DEBUG [7656a4dc] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502184151/public/system
+  INFO [7656a4dc] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [f327d7d9] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [f327d7d9] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/uploads ]
+ DEBUG [f327d7d9] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [65d3e2c4] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [65d3e2c4] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/uploads ]
+ DEBUG [65d3e2c4] Finished in 0.515 seconds with exit status 1 (failed).
+  INFO [d5eee2f7] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502184151/public/uploads as ubuntu@52.24.162.208
+ DEBUG [d5eee2f7] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502184151/public/uploads
+  INFO [d5eee2f7] Finished in 0.518 seconds with exit status 0 (successful).
+ DEBUG [e6bfc75d] Running [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [e6bfc75d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502184151/public/assets ]
+ DEBUG [e6bfc75d] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [28ac9c2d] Running [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [28ac9c2d] Command: [ -d /home/ubuntu/deplot_test/releases/20170502184151/public/assets ]
+ DEBUG [28ac9c2d] Finished in 0.514 seconds with exit status 1 (failed).
+  INFO [486ed72d] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502184151/public/assets as ubuntu@52.24.162.208
+ DEBUG [486ed72d] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502184151/public/assets
+  INFO [486ed72d] Finished in 0.519 seconds with exit status 0 (successful).
+ DEBUG [f53d3ad4] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502184151; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502184151'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [f53d3ad4] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502184151; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502184151'" 1>&2; false; fi
+ DEBUG [f53d3ad4] Finished in 3.154 seconds with exit status 0 (successful).
+ DEBUG [68a8fc7e] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle as ubuntu@52.24.162.208
+ DEBUG [68a8fc7e] Command: cd /home/ubuntu/deplot_test/releases/20170502184151 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle
+ DEBUG [68a8fc7e] 	[31mBundler can't satisfy your Gemfile's dependencies.[0m
+ DEBUG [68a8fc7e] 	
+ DEBUG [68a8fc7e] 	[33mInstall missing gems with `bundle install`.[0m
+ DEBUG [68a8fc7e] 	
+ DEBUG [68a8fc7e] Finished in 0.949 seconds with exit status 1 (failed).
+  INFO [4822bdf6] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet as ubuntu@52.24.162.208
+ DEBUG [4822bdf6] Command: cd /home/ubuntu/deplot_test/releases/20170502184151 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet
+ DEBUG [4822bdf6] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [4822bdf6] 	
+ DEBUG [4822bdf6] 	your Gemfile. Run `bundle install` elsewhere and add the
+ DEBUG [4822bdf6] 	
+updated Gemfile.lock to version control.
+ DEBUG [4822bdf6] 	
+the dependencies in your gemfile changed
+
+
+You have added to the Gemfile:
+* pg[0m
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:13:29 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a9582696] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [a9582696] Command: ~/.rvm/bin/rvm version
+ DEBUG [a9582696] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [a9582696] 	
+ DEBUG [a9582696] Finished in 3.549 seconds with exit status 0 (successful).
+ DEBUG [f7843720] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [f7843720] Command: ~/.rvm/bin/rvm current
+ DEBUG [f7843720] 	ruby-2.4.0
+ DEBUG [f7843720] 	
+ DEBUG [f7843720] Finished in 0.680 seconds with exit status 0 (successful).
+ DEBUG [a9d57f00] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [a9d57f00] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [a9d57f00] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [a9d57f00] 	
+ DEBUG [a9d57f00] Finished in 0.775 seconds with exit status 0 (successful).
+  INFO [ba310750] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [ba310750] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ba310750] Finished in 3.258 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [b5e0f92c] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [b5e0f92c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [b5e0f92c] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [2f0ac4fb] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [2f0ac4fb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [2f0ac4fb] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [2f0ac4fb] 		HEAD
+  INFO [2f0ac4fb] Finished in 3.623 seconds with exit status 0 (successful).
+  INFO [edec440f] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [edec440f] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [edec440f] Finished in 3.521 seconds with exit status 0 (successful).
+  INFO [28bef43e] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [28bef43e] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:19:34 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [14ecc1a2] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [14ecc1a2] Command: ~/.rvm/bin/rvm version
+ DEBUG [14ecc1a2] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [14ecc1a2] 	
+ DEBUG [14ecc1a2] Finished in 8.958 seconds with exit status 0 (successful).
+ DEBUG [ab727153] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [ab727153] Command: ~/.rvm/bin/rvm current
+ DEBUG [ab727153] 	ruby-2.4.0
+ DEBUG [ab727153] 	
+ DEBUG [ab727153] Finished in 0.672 seconds with exit status 0 (successful).
+ DEBUG [b763b6ba] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [b763b6ba] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [b763b6ba] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [b763b6ba] 	
+ DEBUG [b763b6ba] Finished in 0.765 seconds with exit status 0 (successful).
+  INFO [8ff194d7] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [8ff194d7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8ff194d7] Finished in 3.397 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [83eed744] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [83eed744] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [83eed744] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [00e7b882] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [00e7b882] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [00e7b882] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [00e7b882] 		HEAD
+  INFO [00e7b882] Finished in 3.365 seconds with exit status 0 (successful).
+  INFO [687d3f12] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [687d3f12] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [687d3f12] Finished in 3.417 seconds with exit status 0 (successful).
+  INFO [5ab87fe8] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [5ab87fe8] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [5ab87fe8] Finished in 3.369 seconds with exit status 0 (successful).
+  INFO [4ddb7e21] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [4ddb7e21] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [4ddb7e21] Finished in 3.294 seconds with exit status 0 (successful).
+ DEBUG [001b1cc1] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [001b1cc1] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [001b1cc1] Finished in 3.227 seconds with exit status 0 (successful).
+ DEBUG [8eb68b51] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [8eb68b51] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [8eb68b51] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [0b654daa] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [0b654daa] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [0b654daa] Finished in 3.312 seconds with exit status 1 (failed).
+ DEBUG [3972e49f] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [3972e49f] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [3972e49f] Finished in 3.524 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [af2fb524] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [af2fb524] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [af2fb524] Finished in 3.417 seconds with exit status 0 (successful).
+  INFO [5825e102] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [5825e102] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [5825e102] Finished in 0.553 seconds with exit status 0 (successful).
+  INFO [23e0ca71] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [23e0ca71] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [23e0ca71] 	Fetching origin
+ DEBUG [23e0ca71] 	
+  INFO [23e0ca71] Finished in 0.736 seconds with exit status 0 (successful).
+ DEBUG [14593372] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [14593372] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [14593372] Finished in 3.275 seconds with exit status 0 (successful).
+  INFO [bae51b3c] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011 as ubuntu@52.24.162.208
+ DEBUG [bae51b3c] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011 )
+  INFO [bae51b3c] Finished in 0.529 seconds with exit status 0 (successful).
+  INFO [7b9c8abd] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502185011 as ubuntu@52.24.162.208
+ DEBUG [7b9c8abd] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502185011 )
+  INFO [7b9c8abd] Finished in 0.534 seconds with exit status 0 (successful).
+ DEBUG [e6c22957] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [e6c22957] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [e6c22957] Finished in 3.291 seconds with exit status 0 (successful).
+ DEBUG [00654a12] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [00654a12] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [00654a12] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [00654a12] 	
+ DEBUG [00654a12] Finished in 0.533 seconds with exit status 0 (successful).
+ DEBUG [bf2fba26] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502185011; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185011'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [bf2fba26] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502185011; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185011'" 1>&2; false; fi
+ DEBUG [bf2fba26] Finished in 3.383 seconds with exit status 0 (successful).
+  INFO [ed89f675] Running /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [ed89f675] Command: cd /home/ubuntu/deplot_test/releases/20170502185011 && /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION
+  INFO [ed89f675] Finished in 0.548 seconds with exit status 0 (successful).
+  INFO [1799c388] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011/config as ubuntu@52.24.162.208
+ DEBUG [1799c388] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011/config
+  INFO [1799c388] Finished in 3.350 seconds with exit status 0 (successful).
+ DEBUG [bd136d64] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [bd136d64] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml ]
+ DEBUG [bd136d64] Finished in 0.540 seconds with exit status 1 (failed).
+ DEBUG [fa94acf9] Running [ -f /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [fa94acf9] Command: [ -f /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml ]
+ DEBUG [fa94acf9] Finished in 0.539 seconds with exit status 1 (failed).
+  INFO [26eb3daf] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [26eb3daf] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502185011/config/database.yml
+  INFO [26eb3daf] Finished in 0.541 seconds with exit status 0 (successful).
+ DEBUG [7f45244c] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [7f45244c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml ]
+ DEBUG [7f45244c] Finished in 0.539 seconds with exit status 1 (failed).
+ DEBUG [0ff53f31] Running [ -f /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [0ff53f31] Command: [ -f /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml ]
+ DEBUG [0ff53f31] Finished in 0.539 seconds with exit status 1 (failed).
+  INFO [914fec6c] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [914fec6c] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502185011/config/secrets.yml
+  INFO [914fec6c] Finished in 0.540 seconds with exit status 0 (successful).
+  INFO [b14e66fe] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011 /home/ubuntu/deplot_test/releases/20170502185011/tmp /home/ubuntu/deplot_test/releases/20170502185011/vendor /home/ubuntu/deplot_test/releases/20170502185011/public as ubuntu@52.24.162.208
+ DEBUG [b14e66fe] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185011 /home/ubuntu/deplot_test/releases/20170502185011/tmp /home/ubuntu/deplot_test/releases/20170502185011/vendor /home/ubuntu/deplot_test/releases/20170502185011/public
+  INFO [b14e66fe] Finished in 3.329 seconds with exit status 0 (successful).
+ DEBUG [dcafccb2] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/log ] as ubuntu@52.24.162.208
+ DEBUG [dcafccb2] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/log ]
+ DEBUG [dcafccb2] Finished in 0.537 seconds with exit status 1 (failed).
+ DEBUG [bae5f2fc] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/log ] as ubuntu@52.24.162.208
+ DEBUG [bae5f2fc] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/log ]
+ DEBUG [bae5f2fc] Finished in 0.536 seconds with exit status 0 (successful).
+  INFO [1776e8a1] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502185011/log as ubuntu@52.24.162.208
+ DEBUG [1776e8a1] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502185011/log
+  INFO [1776e8a1] Finished in 0.537 seconds with exit status 0 (successful).
+  INFO [346adc34] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502185011/log as ubuntu@52.24.162.208
+ DEBUG [346adc34] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502185011/log
+  INFO [346adc34] Finished in 0.536 seconds with exit status 0 (successful).
+ DEBUG [787037ca] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [787037ca] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids ]
+ DEBUG [787037ca] Finished in 0.537 seconds with exit status 1 (failed).
+ DEBUG [d15e7890] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [d15e7890] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids ]
+ DEBUG [d15e7890] Finished in 0.537 seconds with exit status 1 (failed).
+  INFO [5bb8408f] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [5bb8408f] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502185011/tmp/pids
+  INFO [5bb8408f] Finished in 0.536 seconds with exit status 0 (successful).
+ DEBUG [bfc84574] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [bfc84574] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache ]
+ DEBUG [bfc84574] Finished in 0.536 seconds with exit status 1 (failed).
+ DEBUG [2f655c65] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [2f655c65] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache ]
+ DEBUG [2f655c65] Finished in 0.540 seconds with exit status 1 (failed).
+  INFO [b8a71ced] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [b8a71ced] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502185011/tmp/cache
+  INFO [b8a71ced] Finished in 0.539 seconds with exit status 0 (successful).
+ DEBUG [5b042048] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [5b042048] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets ]
+ DEBUG [5b042048] Finished in 0.536 seconds with exit status 1 (failed).
+ DEBUG [118fc9fb] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [118fc9fb] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets ]
+ DEBUG [118fc9fb] Finished in 0.536 seconds with exit status 1 (failed).
+  INFO [3689e659] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [3689e659] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502185011/tmp/sockets
+  INFO [3689e659] Finished in 0.538 seconds with exit status 0 (successful).
+ DEBUG [c1d6992c] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [c1d6992c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle ]
+ DEBUG [c1d6992c] Finished in 0.536 seconds with exit status 1 (failed).
+ DEBUG [830318b1] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [830318b1] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle ]
+ DEBUG [830318b1] Finished in 0.539 seconds with exit status 1 (failed).
+  INFO [fe1147c0] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [fe1147c0] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502185011/vendor/bundle
+  INFO [fe1147c0] Finished in 0.538 seconds with exit status 0 (successful).
+ DEBUG [25e13a9d] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/system ] as ubuntu@52.24.162.208
+ DEBUG [25e13a9d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/system ]
+ DEBUG [25e13a9d] Finished in 0.537 seconds with exit status 1 (failed).
+ DEBUG [a54e01f8] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/system ] as ubuntu@52.24.162.208
+ DEBUG [a54e01f8] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/system ]
+ DEBUG [a54e01f8] Finished in 0.537 seconds with exit status 1 (failed).
+  INFO [675c22eb] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502185011/public/system as ubuntu@52.24.162.208
+ DEBUG [675c22eb] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502185011/public/system
+  INFO [675c22eb] Finished in 0.540 seconds with exit status 0 (successful).
+ DEBUG [2a486631] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [2a486631] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/uploads ]
+ DEBUG [2a486631] Finished in 0.543 seconds with exit status 1 (failed).
+ DEBUG [1e0261c8] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [1e0261c8] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/uploads ]
+ DEBUG [1e0261c8] Finished in 0.536 seconds with exit status 1 (failed).
+  INFO [18b0fcaf] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502185011/public/uploads as ubuntu@52.24.162.208
+ DEBUG [18b0fcaf] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502185011/public/uploads
+  INFO [18b0fcaf] Finished in 0.537 seconds with exit status 0 (successful).
+ DEBUG [70370a3b] Running [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [70370a3b] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185011/public/assets ]
+ DEBUG [70370a3b] Finished in 0.536 seconds with exit status 1 (failed).
+ DEBUG [24391416] Running [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [24391416] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185011/public/assets ]
+ DEBUG [24391416] Finished in 0.537 seconds with exit status 1 (failed).
+  INFO [717a9757] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502185011/public/assets as ubuntu@52.24.162.208
+ DEBUG [717a9757] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502185011/public/assets
+  INFO [717a9757] Finished in 0.538 seconds with exit status 0 (successful).
+ DEBUG [3823b628] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502185011; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185011'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [3823b628] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502185011; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185011'" 1>&2; false; fi
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:27:38 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d603e87f] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [d603e87f] Command: ~/.rvm/bin/rvm version
+ DEBUG [d603e87f] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [d603e87f] 	
+ DEBUG [d603e87f] Finished in 3.809 seconds with exit status 0 (successful).
+ DEBUG [31ed5029] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [31ed5029] Command: ~/.rvm/bin/rvm current
+ DEBUG [31ed5029] 	ruby-2.4.0
+ DEBUG [31ed5029] 	
+ DEBUG [31ed5029] Finished in 0.683 seconds with exit status 0 (successful).
+ DEBUG [21417b3b] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [21417b3b] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [21417b3b] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [21417b3b] 	
+ DEBUG [21417b3b] Finished in 0.774 seconds with exit status 0 (successful).
+  INFO [ec30f49c] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [ec30f49c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ec30f49c] Finished in 3.221 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [5d468209] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [5d468209] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [5d468209] Finished in 0.521 seconds with exit status 0 (successful).
+  INFO [0b20bc8e] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [0b20bc8e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [0b20bc8e] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [0b20bc8e] 		
+ DEBUG [0b20bc8e] 	HEAD
+  INFO [0b20bc8e] Finished in 3.655 seconds with exit status 0 (successful).
+  INFO [a46fc77b] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [a46fc77b] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [a46fc77b] Finished in 3.152 seconds with exit status 0 (successful).
+  INFO [1ca10d4c] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [1ca10d4c] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [1ca10d4c] Finished in 3.373 seconds with exit status 0 (successful).
+  INFO [ad3453a7] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [ad3453a7] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [ad3453a7] Finished in 3.233 seconds with exit status 0 (successful).
+ DEBUG [94984d46] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [94984d46] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [94984d46] Finished in 3.194 seconds with exit status 0 (successful).
+ DEBUG [d91ceed7] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [d91ceed7] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [d91ceed7] Finished in 0.514 seconds with exit status 0 (successful).
+ DEBUG [3bfdb40a] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [3bfdb40a] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [3bfdb40a] Finished in 3.408 seconds with exit status 1 (failed).
+ DEBUG [e72f2588] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [e72f2588] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [e72f2588] Finished in 3.337 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [1f3fc99e] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [1f3fc99e] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [1f3fc99e] Finished in 3.511 seconds with exit status 0 (successful).
+  INFO [6899493a] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [6899493a] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [6899493a] Finished in 0.570 seconds with exit status 0 (successful).
+  INFO [386ca438] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [386ca438] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [386ca438] 	Fetching origin
+ DEBUG [386ca438] 	
+  INFO [386ca438] Finished in 0.749 seconds with exit status 0 (successful).
+ DEBUG [fb2c733d] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [fb2c733d] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [fb2c733d] Finished in 3.342 seconds with exit status 0 (successful).
+  INFO [3b7e7494] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809 as ubuntu@52.24.162.208
+ DEBUG [3b7e7494] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809 )
+  INFO [3b7e7494] Finished in 0.542 seconds with exit status 0 (successful).
+  INFO [cd4fbe33] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502185809 as ubuntu@52.24.162.208
+ DEBUG [cd4fbe33] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502185809 )
+  INFO [cd4fbe33] Finished in 0.547 seconds with exit status 0 (successful).
+ DEBUG [84d5b386] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [84d5b386] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [84d5b386] Finished in 3.413 seconds with exit status 0 (successful).
+ DEBUG [d2d295d9] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [d2d295d9] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d2d295d9] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [d2d295d9] 	
+ DEBUG [d2d295d9] Finished in 0.553 seconds with exit status 0 (successful).
+ DEBUG [82a83288] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502185809; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185809'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [82a83288] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502185809; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185809'" 1>&2; false; fi
+ DEBUG [82a83288] Finished in 3.269 seconds with exit status 0 (successful).
+  INFO [fc0f32c4] Running /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [fc0f32c4] Command: cd /home/ubuntu/deplot_test/releases/20170502185809 && /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION
+  INFO [fc0f32c4] Finished in 0.528 seconds with exit status 0 (successful).
+  INFO [0343b0d4] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809/config as ubuntu@52.24.162.208
+ DEBUG [0343b0d4] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809/config
+  INFO [0343b0d4] Finished in 3.467 seconds with exit status 0 (successful).
+ DEBUG [c8f12f57] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [c8f12f57] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml ]
+ DEBUG [c8f12f57] Finished in 0.559 seconds with exit status 1 (failed).
+ DEBUG [73201062] Running [ -f /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [73201062] Command: [ -f /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml ]
+ DEBUG [73201062] Finished in 0.559 seconds with exit status 1 (failed).
+  INFO [39436db5] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [39436db5] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502185809/config/database.yml
+  INFO [39436db5] Finished in 0.560 seconds with exit status 0 (successful).
+ DEBUG [2ba1ba2e] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [2ba1ba2e] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml ]
+ DEBUG [2ba1ba2e] Finished in 0.558 seconds with exit status 1 (failed).
+ DEBUG [fddb79f1] Running [ -f /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [fddb79f1] Command: [ -f /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml ]
+ DEBUG [fddb79f1] Finished in 0.560 seconds with exit status 1 (failed).
+  INFO [da5ec06b] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [da5ec06b] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502185809/config/secrets.yml
+  INFO [da5ec06b] Finished in 0.560 seconds with exit status 0 (successful).
+  INFO [a00c96b4] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809 /home/ubuntu/deplot_test/releases/20170502185809/tmp /home/ubuntu/deplot_test/releases/20170502185809/vendor /home/ubuntu/deplot_test/releases/20170502185809/public as ubuntu@52.24.162.208
+ DEBUG [a00c96b4] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502185809 /home/ubuntu/deplot_test/releases/20170502185809/tmp /home/ubuntu/deplot_test/releases/20170502185809/vendor /home/ubuntu/deplot_test/releases/20170502185809/public
+  INFO [a00c96b4] Finished in 3.505 seconds with exit status 0 (successful).
+ DEBUG [29f3ca37] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/log ] as ubuntu@52.24.162.208
+ DEBUG [29f3ca37] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/log ]
+ DEBUG [29f3ca37] Finished in 0.566 seconds with exit status 1 (failed).
+ DEBUG [85ad0a63] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/log ] as ubuntu@52.24.162.208
+ DEBUG [85ad0a63] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/log ]
+ DEBUG [85ad0a63] Finished in 0.566 seconds with exit status 0 (successful).
+  INFO [839f95d9] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502185809/log as ubuntu@52.24.162.208
+ DEBUG [839f95d9] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502185809/log
+  INFO [839f95d9] Finished in 0.567 seconds with exit status 0 (successful).
+  INFO [e585c655] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502185809/log as ubuntu@52.24.162.208
+ DEBUG [e585c655] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502185809/log
+  INFO [e585c655] Finished in 0.567 seconds with exit status 0 (successful).
+ DEBUG [0d1266d7] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [0d1266d7] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids ]
+ DEBUG [0d1266d7] Finished in 0.565 seconds with exit status 1 (failed).
+ DEBUG [17cbf057] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [17cbf057] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids ]
+ DEBUG [17cbf057] Finished in 0.566 seconds with exit status 1 (failed).
+  INFO [0facd119] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [0facd119] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502185809/tmp/pids
+  INFO [0facd119] Finished in 0.566 seconds with exit status 0 (successful).
+ DEBUG [2ca76c43] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [2ca76c43] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache ]
+ DEBUG [2ca76c43] Finished in 0.566 seconds with exit status 1 (failed).
+ DEBUG [faf8e784] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [faf8e784] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache ]
+ DEBUG [faf8e784] Finished in 0.567 seconds with exit status 1 (failed).
+  INFO [413954a6] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [413954a6] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502185809/tmp/cache
+  INFO [413954a6] Finished in 0.566 seconds with exit status 0 (successful).
+ DEBUG [1ab8a9b4] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [1ab8a9b4] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets ]
+ DEBUG [1ab8a9b4] Finished in 0.565 seconds with exit status 1 (failed).
+ DEBUG [9d3375da] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [9d3375da] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets ]
+ DEBUG [9d3375da] Finished in 0.567 seconds with exit status 1 (failed).
+  INFO [e4286f3b] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [e4286f3b] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502185809/tmp/sockets
+  INFO [e4286f3b] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG [5cd03504] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [5cd03504] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle ]
+ DEBUG [5cd03504] Finished in 0.567 seconds with exit status 1 (failed).
+ DEBUG [28775950] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [28775950] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle ]
+ DEBUG [28775950] Finished in 0.567 seconds with exit status 1 (failed).
+  INFO [7a4c17eb] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [7a4c17eb] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502185809/vendor/bundle
+  INFO [7a4c17eb] Finished in 0.565 seconds with exit status 0 (successful).
+ DEBUG [b1411915] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/system ] as ubuntu@52.24.162.208
+ DEBUG [b1411915] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/system ]
+ DEBUG [b1411915] Finished in 0.566 seconds with exit status 1 (failed).
+ DEBUG [1985d3fb] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/system ] as ubuntu@52.24.162.208
+ DEBUG [1985d3fb] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/system ]
+ DEBUG [1985d3fb] Finished in 0.566 seconds with exit status 1 (failed).
+  INFO [08e8267b] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502185809/public/system as ubuntu@52.24.162.208
+ DEBUG [08e8267b] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502185809/public/system
+  INFO [08e8267b] Finished in 0.567 seconds with exit status 0 (successful).
+ DEBUG [a4177ca6] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [a4177ca6] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/uploads ]
+ DEBUG [a4177ca6] Finished in 0.566 seconds with exit status 1 (failed).
+ DEBUG [30a29121] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [30a29121] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/uploads ]
+ DEBUG [30a29121] Finished in 0.566 seconds with exit status 1 (failed).
+  INFO [38ad95f8] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502185809/public/uploads as ubuntu@52.24.162.208
+ DEBUG [38ad95f8] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502185809/public/uploads
+  INFO [38ad95f8] Finished in 0.567 seconds with exit status 0 (successful).
+ DEBUG [3164da2f] Running [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [3164da2f] Command: [ -L /home/ubuntu/deplot_test/releases/20170502185809/public/assets ]
+ DEBUG [3164da2f] Finished in 0.568 seconds with exit status 1 (failed).
+ DEBUG [c81c0ac2] Running [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [c81c0ac2] Command: [ -d /home/ubuntu/deplot_test/releases/20170502185809/public/assets ]
+ DEBUG [c81c0ac2] Finished in 0.566 seconds with exit status 1 (failed).
+  INFO [b334aa0f] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502185809/public/assets as ubuntu@52.24.162.208
+ DEBUG [b334aa0f] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502185809/public/assets
+  INFO [b334aa0f] Finished in 0.567 seconds with exit status 0 (successful).
+ DEBUG [91b3c966] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502185809; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185809'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [91b3c966] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502185809; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502185809'" 1>&2; false; fi
+ DEBUG [91b3c966] Finished in 3.402 seconds with exit status 0 (successful).
+ DEBUG [f9932996] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle as ubuntu@52.24.162.208
+ DEBUG [f9932996] Command: cd /home/ubuntu/deplot_test/releases/20170502185809 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle
+ DEBUG [f9932996] 	[31mBundler can't satisfy your Gemfile's dependencies.[0m
+ DEBUG [f9932996] 	
+ DEBUG [f9932996] 	[33mInstall missing gems with `bundle install`.[0m
+ DEBUG [f9932996] 	
+ DEBUG [f9932996] Finished in 0.979 seconds with exit status 1 (failed).
+  INFO [454ed410] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet as ubuntu@52.24.162.208
+ DEBUG [454ed410] Command: cd /home/ubuntu/deplot_test/releases/20170502185809 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet
+ DEBUG [454ed410] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [454ed410] 	
+ DEBUG [454ed410] 	your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+the dependencies in your gemfile changed
+
+
+You have added to the Gemfile:
+* pg[0m
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:30:27 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [31c37c01] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [31c37c01] Command: ~/.rvm/bin/rvm version
+ DEBUG [31c37c01] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [31c37c01] 	
+ DEBUG [31c37c01] Finished in 3.380 seconds with exit status 0 (successful).
+ DEBUG [7f610127] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [7f610127] Command: ~/.rvm/bin/rvm current
+ DEBUG [7f610127] 	ruby-2.4.0
+ DEBUG [7f610127] 	
+ DEBUG [7f610127] Finished in 1.246 seconds with exit status 0 (successful).
+ DEBUG [95b3b472] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [95b3b472] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [95b3b472] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [95b3b472] 	
+ DEBUG [95b3b472] Finished in 0.760 seconds with exit status 0 (successful).
+  INFO [5b0f3592] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [5b0f3592] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5b0f3592] Finished in 3.397 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [d2b926a1] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [d2b926a1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [d2b926a1] Finished in 0.549 seconds with exit status 0 (successful).
+  INFO [3985fb29] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [3985fb29] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [3985fb29] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [3985fb29] 		HEAD
+  INFO [3985fb29] Finished in 3.484 seconds with exit status 0 (successful).
+  INFO [2f820892] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [2f820892] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [2f820892] Finished in 3.415 seconds with exit status 0 (successful).
+  INFO [a78fbecb] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [a78fbecb] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [a78fbecb] Finished in 3.348 seconds with exit status 0 (successful).
+  INFO [b62c4438] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [b62c4438] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [b62c4438] Finished in 3.212 seconds with exit status 0 (successful).
+ DEBUG [e9e9f1ca] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [e9e9f1ca] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [e9e9f1ca] Finished in 3.391 seconds with exit status 0 (successful).
+ DEBUG [c79a28d4] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [c79a28d4] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [c79a28d4] Finished in 0.544 seconds with exit status 0 (successful).
+ DEBUG [b5e298c9] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [b5e298c9] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [b5e298c9] Finished in 3.289 seconds with exit status 1 (failed).
+ DEBUG [743ce2b5] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [743ce2b5] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [743ce2b5] Finished in 3.234 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [0f9eb60a] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [0f9eb60a] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [0f9eb60a] Finished in 3.325 seconds with exit status 0 (successful).
+  INFO [9f86eb39] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [9f86eb39] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [9f86eb39] Finished in 0.533 seconds with exit status 0 (successful).
+  INFO [d045b15f] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [d045b15f] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d045b15f] 	Fetching origin
+ DEBUG [d045b15f] 	
+  INFO [d045b15f] Finished in 0.714 seconds with exit status 0 (successful).
+ DEBUG [ec6ead14] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [ec6ead14] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [ec6ead14] Finished in 3.152 seconds with exit status 0 (successful).
+  INFO [b69dcd91] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059 as ubuntu@52.24.162.208
+ DEBUG [b69dcd91] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059 )
+  INFO [b69dcd91] Finished in 0.507 seconds with exit status 0 (successful).
+  INFO [59868144] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502190059 as ubuntu@52.24.162.208
+ DEBUG [59868144] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502190059 )
+  INFO [59868144] Finished in 0.517 seconds with exit status 0 (successful).
+ DEBUG [84e87188] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [84e87188] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [84e87188] Finished in 3.391 seconds with exit status 0 (successful).
+ DEBUG [75f31f3c] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [75f31f3c] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [75f31f3c] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [75f31f3c] 	
+ DEBUG [75f31f3c] Finished in 0.548 seconds with exit status 0 (successful).
+ DEBUG [6c24b71a] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502190059; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190059'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [6c24b71a] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502190059; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190059'" 1>&2; false; fi
+ DEBUG [6c24b71a] Finished in 3.330 seconds with exit status 0 (successful).
+  INFO [56e7cfd2] Running /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [56e7cfd2] Command: cd /home/ubuntu/deplot_test/releases/20170502190059 && /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION
+  INFO [56e7cfd2] Finished in 0.539 seconds with exit status 0 (successful).
+  INFO [f0a6d77c] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059/config as ubuntu@52.24.162.208
+ DEBUG [f0a6d77c] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059/config
+  INFO [f0a6d77c] Finished in 3.431 seconds with exit status 0 (successful).
+ DEBUG [aec6819c] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [aec6819c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml ]
+ DEBUG [aec6819c] Finished in 0.553 seconds with exit status 1 (failed).
+ DEBUG [79990589] Running [ -f /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [79990589] Command: [ -f /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml ]
+ DEBUG [79990589] Finished in 0.554 seconds with exit status 1 (failed).
+  INFO [390f5b91] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [390f5b91] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502190059/config/database.yml
+  INFO [390f5b91] Finished in 0.555 seconds with exit status 0 (successful).
+ DEBUG [46af582b] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [46af582b] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml ]
+ DEBUG [46af582b] Finished in 0.556 seconds with exit status 1 (failed).
+ DEBUG [c6d96f77] Running [ -f /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [c6d96f77] Command: [ -f /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml ]
+ DEBUG [c6d96f77] Finished in 0.552 seconds with exit status 1 (failed).
+  INFO [7ae722a0] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [7ae722a0] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502190059/config/secrets.yml
+  INFO [7ae722a0] Finished in 0.553 seconds with exit status 0 (successful).
+  INFO [fdad87b4] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059 /home/ubuntu/deplot_test/releases/20170502190059/tmp /home/ubuntu/deplot_test/releases/20170502190059/vendor /home/ubuntu/deplot_test/releases/20170502190059/public as ubuntu@52.24.162.208
+ DEBUG [fdad87b4] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190059 /home/ubuntu/deplot_test/releases/20170502190059/tmp /home/ubuntu/deplot_test/releases/20170502190059/vendor /home/ubuntu/deplot_test/releases/20170502190059/public
+  INFO [fdad87b4] Finished in 3.406 seconds with exit status 0 (successful).
+ DEBUG [0808d3cd] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/log ] as ubuntu@52.24.162.208
+ DEBUG [0808d3cd] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/log ]
+ DEBUG [0808d3cd] Finished in 0.551 seconds with exit status 1 (failed).
+ DEBUG [9ebfffb1] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/log ] as ubuntu@52.24.162.208
+ DEBUG [9ebfffb1] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/log ]
+ DEBUG [9ebfffb1] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [70627e73] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502190059/log as ubuntu@52.24.162.208
+ DEBUG [70627e73] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502190059/log
+  INFO [70627e73] Finished in 0.550 seconds with exit status 0 (successful).
+  INFO [2f90c645] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502190059/log as ubuntu@52.24.162.208
+ DEBUG [2f90c645] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502190059/log
+  INFO [2f90c645] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG [755ec544] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [755ec544] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids ]
+ DEBUG [755ec544] Finished in 0.551 seconds with exit status 1 (failed).
+ DEBUG [12f1f852] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [12f1f852] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids ]
+ DEBUG [12f1f852] Finished in 0.549 seconds with exit status 1 (failed).
+  INFO [287f9919] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [287f9919] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502190059/tmp/pids
+  INFO [287f9919] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG [f3a82998] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [f3a82998] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache ]
+ DEBUG [f3a82998] Finished in 0.549 seconds with exit status 1 (failed).
+ DEBUG [94664cd0] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [94664cd0] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache ]
+ DEBUG [94664cd0] Finished in 0.550 seconds with exit status 1 (failed).
+  INFO [2bd633ab] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [2bd633ab] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502190059/tmp/cache
+  INFO [2bd633ab] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG [0194ad6e] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [0194ad6e] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets ]
+ DEBUG [0194ad6e] Finished in 0.549 seconds with exit status 1 (failed).
+ DEBUG [5c4fbf2e] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [5c4fbf2e] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets ]
+ DEBUG [5c4fbf2e] Finished in 0.550 seconds with exit status 1 (failed).
+  INFO [9949028c] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [9949028c] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502190059/tmp/sockets
+  INFO [9949028c] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG [e96dac45] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [e96dac45] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle ]
+ DEBUG [e96dac45] Finished in 0.551 seconds with exit status 1 (failed).
+ DEBUG [469c730c] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [469c730c] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle ]
+ DEBUG [469c730c] Finished in 0.550 seconds with exit status 1 (failed).
+  INFO [2cea5dbf] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [2cea5dbf] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502190059/vendor/bundle
+  INFO [2cea5dbf] Finished in 0.549 seconds with exit status 0 (successful).
+ DEBUG [59e99068] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/system ] as ubuntu@52.24.162.208
+ DEBUG [59e99068] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/system ]
+ DEBUG [59e99068] Finished in 0.550 seconds with exit status 1 (failed).
+ DEBUG [8c2b363a] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/system ] as ubuntu@52.24.162.208
+ DEBUG [8c2b363a] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/system ]
+ DEBUG [8c2b363a] Finished in 0.550 seconds with exit status 1 (failed).
+  INFO [94ca4d67] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502190059/public/system as ubuntu@52.24.162.208
+ DEBUG [94ca4d67] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502190059/public/system
+  INFO [94ca4d67] Finished in 0.549 seconds with exit status 0 (successful).
+ DEBUG [05466893] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [05466893] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/uploads ]
+ DEBUG [05466893] Finished in 0.549 seconds with exit status 1 (failed).
+ DEBUG [38adcbd7] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [38adcbd7] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/uploads ]
+ DEBUG [38adcbd7] Finished in 0.552 seconds with exit status 1 (failed).
+  INFO [e3a6cc7c] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502190059/public/uploads as ubuntu@52.24.162.208
+ DEBUG [e3a6cc7c] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502190059/public/uploads
+  INFO [e3a6cc7c] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG [526166ff] Running [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [526166ff] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190059/public/assets ]
+ DEBUG [526166ff] Finished in 0.552 seconds with exit status 1 (failed).
+ DEBUG [803b9c29] Running [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [803b9c29] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190059/public/assets ]
+ DEBUG [803b9c29] Finished in 0.554 seconds with exit status 1 (failed).
+  INFO [0a4c764d] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502190059/public/assets as ubuntu@52.24.162.208
+ DEBUG [0a4c764d] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502190059/public/assets
+  INFO [0a4c764d] Finished in 0.553 seconds with exit status 0 (successful).
+ DEBUG [fefeb76c] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502190059; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190059'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [fefeb76c] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502190059; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190059'" 1>&2; false; fi
+ DEBUG [fefeb76c] Finished in 3.417 seconds with exit status 0 (successful).
+ DEBUG [c932205d] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle as ubuntu@52.24.162.208
+ DEBUG [c932205d] Command: cd /home/ubuntu/deplot_test/releases/20170502190059 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle
+ DEBUG [c932205d] 	[31mBundler can't satisfy your Gemfile's dependencies.[0m
+ DEBUG [c932205d] 	
+ DEBUG [c932205d] 	[33mInstall missing gems with `bundle install`.[0m
+ DEBUG [c932205d] 	
+ DEBUG [c932205d] Finished in 0.983 seconds with exit status 1 (failed).
+  INFO [1966842f] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet as ubuntu@52.24.162.208
+ DEBUG [1966842f] Command: cd /home/ubuntu/deplot_test/releases/20170502190059 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet
+ DEBUG [1966842f] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [1966842f] 	
+ DEBUG [1966842f] 	your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+the dependencies in your gemfile changed
+
+
+You have added to the Gemfile:
+ DEBUG [1966842f] 	
+* pg[0m
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:38:26 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2fae57b1] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [2fae57b1] Command: ~/.rvm/bin/rvm version
+ DEBUG [2fae57b1] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [2fae57b1] 	
+ DEBUG [2fae57b1] Finished in 3.546 seconds with exit status 0 (successful).
+ DEBUG [14bca146] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [14bca146] Command: ~/.rvm/bin/rvm current
+ DEBUG [14bca146] 	ruby-2.4.0
+ DEBUG [14bca146] 	
+ DEBUG [14bca146] Finished in 0.683 seconds with exit status 0 (successful).
+ DEBUG [57958011] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [57958011] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:38:38 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ce568ab1] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [ce568ab1] Command: ~/.rvm/bin/rvm version
+ DEBUG [ce568ab1] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [ce568ab1] 	
+ DEBUG [ce568ab1] Finished in 3.382 seconds with exit status 0 (successful).
+ DEBUG [26ca45de] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [26ca45de] Command: ~/.rvm/bin/rvm current
+ DEBUG [26ca45de] 	ruby-2.4.0
+ DEBUG [26ca45de] 	
+ DEBUG [26ca45de] Finished in 0.656 seconds with exit status 0 (successful).
+ DEBUG [5b43e470] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [5b43e470] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [5b43e470] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [5b43e470] 	
+ DEBUG [5b43e470] Finished in 0.749 seconds with exit status 0 (successful).
+  INFO [61682cfb] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [61682cfb] Command: /usr/bin/env mkdir -p /tmp
+  INFO [61682cfb] Finished in 3.292 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [1504ce14] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [1504ce14] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [1504ce14] Finished in 0.529 seconds with exit status 0 (successful).
+  INFO [3e150482] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [3e150482] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [3e150482] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [3e150482] 		HEAD
+  INFO [3e150482] Finished in 4.590 seconds with exit status 0 (successful).
+  INFO [6fe3e3cb] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [6fe3e3cb] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [6fe3e3cb] Finished in 4.678 seconds with exit status 0 (successful).
+  INFO [3211777f] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [3211777f] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [3211777f] Finished in 3.201 seconds with exit status 0 (successful).
+  INFO [7d27fcd3] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [7d27fcd3] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [7d27fcd3] Finished in 3.236 seconds with exit status 0 (successful).
+ DEBUG [73f9fb3f] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [73f9fb3f] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [73f9fb3f] Finished in 3.301 seconds with exit status 0 (successful).
+ DEBUG [8ec1321c] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [8ec1321c] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [8ec1321c] Finished in 0.531 seconds with exit status 0 (successful).
+ DEBUG [d3478cb2] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [d3478cb2] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [d3478cb2] Finished in 3.359 seconds with exit status 1 (failed).
+ DEBUG [683afeb3] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [683afeb3] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [683afeb3] Finished in 3.528 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [f59f0dab] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [f59f0dab] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [f59f0dab] Finished in 3.388 seconds with exit status 0 (successful).
+  INFO [9468146b] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [9468146b] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [9468146b] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [abaef4bf] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [abaef4bf] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [abaef4bf] 	Fetching origin
+ DEBUG [abaef4bf] 	
+  INFO [abaef4bf] Finished in 0.721 seconds with exit status 0 (successful).
+ DEBUG [dcd1b5ca] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [dcd1b5ca] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [dcd1b5ca] Finished in 3.311 seconds with exit status 0 (successful).
+  INFO [225a7719] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911 as ubuntu@52.24.162.208
+ DEBUG [225a7719] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911 )
+  INFO [225a7719] Finished in 0.536 seconds with exit status 0 (successful).
+  INFO [9ba2e898] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502190911 as ubuntu@52.24.162.208
+ DEBUG [9ba2e898] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502190911 )
+  INFO [9ba2e898] Finished in 0.541 seconds with exit status 0 (successful).
+ DEBUG [077bbea5] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [077bbea5] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [077bbea5] Finished in 3.256 seconds with exit status 0 (successful).
+ DEBUG [84daf3a2] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [84daf3a2] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [84daf3a2] 	52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c
+ DEBUG [84daf3a2] 	
+ DEBUG [84daf3a2] Finished in 0.525 seconds with exit status 0 (successful).
+ DEBUG [126c9d81] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502190911; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190911'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [126c9d81] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502190911; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190911'" 1>&2; false; fi
+ DEBUG [126c9d81] Finished in 3.495 seconds with exit status 0 (successful).
+  INFO [d501ac1c] Running /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [d501ac1c] Command: cd /home/ubuntu/deplot_test/releases/20170502190911 && /usr/bin/env echo "52d53fb59b02b1c7e0977b9b7c0a6e0a2e72943c" >> REVISION
+  INFO [d501ac1c] Finished in 0.564 seconds with exit status 0 (successful).
+  INFO [9b7891f6] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911/config as ubuntu@52.24.162.208
+ DEBUG [9b7891f6] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911/config
+  INFO [9b7891f6] Finished in 3.212 seconds with exit status 0 (successful).
+ DEBUG [68dd075c] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [68dd075c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml ]
+ DEBUG [68dd075c] Finished in 0.514 seconds with exit status 1 (failed).
+ DEBUG [5f097521] Running [ -f /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [5f097521] Command: [ -f /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml ]
+ DEBUG [5f097521] Finished in 0.515 seconds with exit status 1 (failed).
+  INFO [d5e21d36] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [d5e21d36] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502190911/config/database.yml
+  INFO [d5e21d36] Finished in 0.516 seconds with exit status 0 (successful).
+ DEBUG [faf84c9a] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [faf84c9a] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml ]
+ DEBUG [faf84c9a] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [1d2ba9c7] Running [ -f /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [1d2ba9c7] Command: [ -f /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml ]
+ DEBUG [1d2ba9c7] Finished in 0.520 seconds with exit status 1 (failed).
+  INFO [4e4815bc] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [4e4815bc] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502190911/config/secrets.yml
+  INFO [4e4815bc] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [2434a25a] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911 /home/ubuntu/deplot_test/releases/20170502190911/tmp /home/ubuntu/deplot_test/releases/20170502190911/vendor /home/ubuntu/deplot_test/releases/20170502190911/public as ubuntu@52.24.162.208
+ DEBUG [2434a25a] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502190911 /home/ubuntu/deplot_test/releases/20170502190911/tmp /home/ubuntu/deplot_test/releases/20170502190911/vendor /home/ubuntu/deplot_test/releases/20170502190911/public
+  INFO [2434a25a] Finished in 3.437 seconds with exit status 0 (successful).
+ DEBUG [2f32d51d] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/log ] as ubuntu@52.24.162.208
+ DEBUG [2f32d51d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/log ]
+ DEBUG [2f32d51d] Finished in 0.552 seconds with exit status 1 (failed).
+ DEBUG [9ea72ca1] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/log ] as ubuntu@52.24.162.208
+ DEBUG [9ea72ca1] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/log ]
+ DEBUG [9ea72ca1] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [6cf9855f] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502190911/log as ubuntu@52.24.162.208
+ DEBUG [6cf9855f] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502190911/log
+  INFO [6cf9855f] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [5c01f4b5] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502190911/log as ubuntu@52.24.162.208
+ DEBUG [5c01f4b5] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502190911/log
+  INFO [5c01f4b5] Finished in 0.554 seconds with exit status 0 (successful).
+ DEBUG [f2d2abf8] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [f2d2abf8] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids ]
+ DEBUG [f2d2abf8] Finished in 0.563 seconds with exit status 1 (failed).
+ DEBUG [fbe0800b] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [fbe0800b] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids ]
+ DEBUG [fbe0800b] Finished in 0.562 seconds with exit status 1 (failed).
+  INFO [84f8b73f] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [84f8b73f] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502190911/tmp/pids
+  INFO [84f8b73f] Finished in 0.552 seconds with exit status 0 (successful).
+ DEBUG [1e0d6e9d] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [1e0d6e9d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache ]
+ DEBUG [1e0d6e9d] Finished in 0.554 seconds with exit status 1 (failed).
+ DEBUG [9b893a71] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [9b893a71] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache ]
+ DEBUG [9b893a71] Finished in 0.555 seconds with exit status 1 (failed).
+  INFO [2e2edbd9] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [2e2edbd9] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502190911/tmp/cache
+  INFO [2e2edbd9] Finished in 0.557 seconds with exit status 0 (successful).
+ DEBUG [2657e16c] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [2657e16c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets ]
+ DEBUG [2657e16c] Finished in 0.555 seconds with exit status 1 (failed).
+ DEBUG [a634eba2] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [a634eba2] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets ]
+ DEBUG [a634eba2] Finished in 0.555 seconds with exit status 1 (failed).
+  INFO [54e9c650] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [54e9c650] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502190911/tmp/sockets
+  INFO [54e9c650] Finished in 0.556 seconds with exit status 0 (successful).
+ DEBUG [ef252264] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [ef252264] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle ]
+ DEBUG [ef252264] Finished in 0.555 seconds with exit status 1 (failed).
+ DEBUG [efb2673c] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [efb2673c] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle ]
+ DEBUG [efb2673c] Finished in 0.555 seconds with exit status 1 (failed).
+  INFO [a2dca1fa] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [a2dca1fa] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502190911/vendor/bundle
+  INFO [a2dca1fa] Finished in 0.556 seconds with exit status 0 (successful).
+ DEBUG [9240ea5a] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/system ] as ubuntu@52.24.162.208
+ DEBUG [9240ea5a] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/system ]
+ DEBUG [9240ea5a] Finished in 0.564 seconds with exit status 1 (failed).
+ DEBUG [ce677946] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/system ] as ubuntu@52.24.162.208
+ DEBUG [ce677946] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/system ]
+ DEBUG [ce677946] Finished in 0.560 seconds with exit status 1 (failed).
+  INFO [fb0a4663] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502190911/public/system as ubuntu@52.24.162.208
+ DEBUG [fb0a4663] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502190911/public/system
+  INFO [fb0a4663] Finished in 0.556 seconds with exit status 0 (successful).
+ DEBUG [c05ba6f4] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [c05ba6f4] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/uploads ]
+ DEBUG [c05ba6f4] Finished in 0.554 seconds with exit status 1 (failed).
+ DEBUG [af776a52] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [af776a52] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/uploads ]
+ DEBUG [af776a52] Finished in 0.555 seconds with exit status 1 (failed).
+  INFO [910f726e] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502190911/public/uploads as ubuntu@52.24.162.208
+ DEBUG [910f726e] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502190911/public/uploads
+  INFO [910f726e] Finished in 0.555 seconds with exit status 0 (successful).
+ DEBUG [af59d153] Running [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [af59d153] Command: [ -L /home/ubuntu/deplot_test/releases/20170502190911/public/assets ]
+ DEBUG [af59d153] Finished in 0.555 seconds with exit status 1 (failed).
+ DEBUG [dd36c402] Running [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [dd36c402] Command: [ -d /home/ubuntu/deplot_test/releases/20170502190911/public/assets ]
+ DEBUG [dd36c402] Finished in 0.555 seconds with exit status 1 (failed).
+  INFO [6fabebec] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502190911/public/assets as ubuntu@52.24.162.208
+ DEBUG [6fabebec] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502190911/public/assets
+  INFO [6fabebec] Finished in 0.556 seconds with exit status 0 (successful).
+ DEBUG [af993084] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502190911; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190911'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [af993084] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502190911; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502190911'" 1>&2; false; fi
+ DEBUG [af993084] Finished in 3.233 seconds with exit status 0 (successful).
+ DEBUG [382e942e] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle as ubuntu@52.24.162.208
+ DEBUG [382e942e] Command: cd /home/ubuntu/deplot_test/releases/20170502190911 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle
+ DEBUG [382e942e] 	[31mBundler can't satisfy your Gemfile's dependencies.[0m
+ DEBUG [382e942e] 	
+ DEBUG [382e942e] 	[33mInstall missing gems with `bundle install`.[0m
+ DEBUG [382e942e] 	
+ DEBUG [382e942e] Finished in 0.955 seconds with exit status 1 (failed).
+  INFO [20f830dd] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet as ubuntu@52.24.162.208
+ DEBUG [20f830dd] Command: cd /home/ubuntu/deplot_test/releases/20170502190911 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet
+ DEBUG [20f830dd] 	[31mYou are trying to install in deployment mode after changing
+ DEBUG [20f830dd] 	
+ DEBUG [20f830dd] 	your Gemfile. Run `bundle install` elsewhere and add the
+ DEBUG [20f830dd] 	
+updated Gemfile.lock to version control.
+
+the dependencies in your gemfile changed
+ DEBUG [20f830dd] 	
+
+ DEBUG [20f830dd] 	
+You have added to the Gemfile:
+ DEBUG [20f830dd] 	* pg[0m

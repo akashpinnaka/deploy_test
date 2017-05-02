@@ -1,6 +1,12 @@
 set :stage, :production
 server '52.24.162.208', user: 'ubuntu', roles: %w{app db web}
 
+
+# server = NET::SSH.start ...
+# timeout 60 do
+#   server.exec!
+# end
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.

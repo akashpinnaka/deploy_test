@@ -25,7 +25,6 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  # capistrano gems required for production
   gem 'capistrano', '~> 3.8', '>= 3.8.1'
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false

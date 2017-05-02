@@ -39,3 +39,1139 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [167386e1] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as deploy@52.88.191.158
  DEBUG [167386e1] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 22:51:13 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6e79a415] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [6e79a415] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 22:54:59 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4e443ada] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [4e443ada] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 22:57:26 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [747996bb] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [747996bb] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:00:42 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c758ce78] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [c758ce78] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:00:52 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [93e89a56] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [93e89a56] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:00:57 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [585978c1] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [585978c1] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:01:13 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a5d04f79] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [a5d04f79] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:04:03 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2ac2c9f2] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [2ac2c9f2] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:09:06 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c5a65e11] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [c5a65e11] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:11:18 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d82a7e88] Running ~/.rvm/bin/rvm version as deploy@52.24.162.208
+ DEBUG [d82a7e88] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:41:50 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5e4a3da6] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [5e4a3da6] Command: ~/.rvm/bin/rvm version
+ DEBUG [5e4a3da6] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [5e4a3da6] 	
+ DEBUG [5e4a3da6] Finished in 3.558 seconds with exit status 0 (successful).
+ DEBUG [8bb9c98e] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [8bb9c98e] Command: ~/.rvm/bin/rvm current
+ DEBUG [8bb9c98e] 	ruby-2.4.0
+ DEBUG [8bb9c98e] 	
+ DEBUG [8bb9c98e] Finished in 0.682 seconds with exit status 0 (successful).
+ DEBUG [aeedbd16] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [aeedbd16] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [aeedbd16] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [aeedbd16] 	
+ DEBUG [aeedbd16] Finished in 0.772 seconds with exit status 0 (successful).
+  INFO [77f1ced1] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [77f1ced1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [77f1ced1] Finished in 3.368 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [58620d66] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [58620d66] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [58620d66] Finished in 0.544 seconds with exit status 0 (successful).
+  INFO [1f803a34] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [1f803a34] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [1f803a34] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [1f803a34] 		HEAD
+  INFO [1f803a34] Finished in 3.635 seconds with exit status 0 (successful).
+  INFO [6917680e] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [6917680e] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [6917680e] Finished in 3.369 seconds with exit status 0 (successful).
+  INFO [82a18929] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [82a18929] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [82a18929] Finished in 3.388 seconds with exit status 0 (successful).
+  INFO [d82b39fc] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [d82b39fc] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [d82b39fc] Finished in 3.326 seconds with exit status 0 (successful).
+ DEBUG [72c5af1a] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [72c5af1a] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [72c5af1a] Finished in 3.274 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/deplot_test/shared/config/database.yml does not exist on 52.24.162.208
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:47:45 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e700545e] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [e700545e] Command: ~/.rvm/bin/rvm version
+ DEBUG [e700545e] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [e700545e] 	
+ DEBUG [e700545e] Finished in 3.569 seconds with exit status 0 (successful).
+ DEBUG [be6b4127] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [be6b4127] Command: ~/.rvm/bin/rvm current
+ DEBUG [be6b4127] 	ruby-2.4.0
+ DEBUG [be6b4127] 	
+ DEBUG [be6b4127] Finished in 0.689 seconds with exit status 0 (successful).
+ DEBUG [d1ccd2c7] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [d1ccd2c7] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [d1ccd2c7] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [d1ccd2c7] 	
+ DEBUG [d1ccd2c7] Finished in 0.778 seconds with exit status 0 (successful).
+  INFO [67add485] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [67add485] Command: /usr/bin/env mkdir -p /tmp
+  INFO [67add485] Finished in 3.440 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [d71b7998] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [d71b7998] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [d71b7998] Finished in 0.556 seconds with exit status 0 (successful).
+  INFO [7809d109] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [7809d109] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [7809d109] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [7809d109] 		
+ DEBUG [7809d109] 	HEAD
+ DEBUG [7809d109] 	
+  INFO [7809d109] Finished in 3.408 seconds with exit status 0 (successful).
+  INFO [358a560c] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [358a560c] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:53:52 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0cb26492] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [0cb26492] Command: ~/.rvm/bin/rvm version
+ DEBUG [0cb26492] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [0cb26492] 	
+ DEBUG [0cb26492] Finished in 3.344 seconds with exit status 0 (successful).
+ DEBUG [c00236f2] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [c00236f2] Command: ~/.rvm/bin/rvm current
+ DEBUG [c00236f2] 	ruby-2.4.0
+ DEBUG [c00236f2] 	
+ DEBUG [c00236f2] Finished in 0.650 seconds with exit status 0 (successful).
+ DEBUG [f877fe0e] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [f877fe0e] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [f877fe0e] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [f877fe0e] 	
+ DEBUG [f877fe0e] Finished in 0.747 seconds with exit status 0 (successful).
+  INFO [65486bea] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [65486bea] Command: /usr/bin/env mkdir -p /tmp
+  INFO [65486bea] Finished in 3.373 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [fd7a0abe] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [fd7a0abe] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [fd7a0abe] Finished in 0.545 seconds with exit status 0 (successful).
+  INFO [0f79e27c] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [0f79e27c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [0f79e27c] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [0f79e27c] 		HEAD
+  INFO [0f79e27c] Finished in 3.337 seconds with exit status 0 (successful).
+  INFO [71ff53d8] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [71ff53d8] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [71ff53d8] Finished in 3.407 seconds with exit status 0 (successful).
+  INFO [4ac12da0] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [4ac12da0] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [4ac12da0] Finished in 6.235 seconds with exit status 0 (successful).
+  INFO [f463ca56] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [f463ca56] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [f463ca56] Finished in 3.359 seconds with exit status 0 (successful).
+ DEBUG [1cfe1b4e] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [1cfe1b4e] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [1cfe1b4e] Finished in 3.408 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/deplot_test/shared/config/database.yml does not exist on 52.24.162.208
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 23:58:40 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2e0fc847] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [2e0fc847] Command: ~/.rvm/bin/rvm version
+ DEBUG [2e0fc847] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [2e0fc847] 	
+ DEBUG [2e0fc847] Finished in 3.479 seconds with exit status 0 (successful).
+ DEBUG [4a65fed9] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [4a65fed9] Command: ~/.rvm/bin/rvm current
+ DEBUG [4a65fed9] 	ruby-2.4.0
+ DEBUG [4a65fed9] 	
+ DEBUG [4a65fed9] Finished in 0.668 seconds with exit status 0 (successful).
+ DEBUG [59adf0a7] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [59adf0a7] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [59adf0a7] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [59adf0a7] 	
+ DEBUG [59adf0a7] Finished in 0.760 seconds with exit status 0 (successful).
+  INFO [fac9a12b] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [fac9a12b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fac9a12b] Finished in 3.429 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [b49cb548] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [b49cb548] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [b49cb548] Finished in 0.545 seconds with exit status 0 (successful).
+  INFO [34baa162] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [34baa162] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [34baa162] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [34baa162] 		HEAD
+  INFO [34baa162] Finished in 3.690 seconds with exit status 0 (successful).
+  INFO [b94ecadf] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [b94ecadf] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [b94ecadf] Finished in 3.259 seconds with exit status 0 (successful).
+  INFO [a981732e] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [a981732e] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [a981732e] Finished in 3.259 seconds with exit status 0 (successful).
+  INFO [3674d178] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [3674d178] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [3674d178] Finished in 3.262 seconds with exit status 0 (successful).
+ DEBUG [d0c6a642] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [d0c6a642] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [d0c6a642] Finished in 3.374 seconds with exit status 0 (successful).
+ DEBUG [a03c166a] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [a03c166a] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [a03c166a] Finished in 0.546 seconds with exit status 0 (successful).
+ DEBUG [8f9a88a9] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [8f9a88a9] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:01:55 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9280ec16] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [9280ec16] Command: ~/.rvm/bin/rvm version
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:02:02 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4c66732a] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [4c66732a] Command: ~/.rvm/bin/rvm version
+ DEBUG [4c66732a] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [4c66732a] 	
+ DEBUG [4c66732a] Finished in 3.483 seconds with exit status 0 (successful).
+ DEBUG [b445856f] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [b445856f] Command: ~/.rvm/bin/rvm current
+ DEBUG [b445856f] 	ruby-2.4.0
+ DEBUG [b445856f] 	
+ DEBUG [b445856f] Finished in 0.673 seconds with exit status 0 (successful).
+ DEBUG [a3e78574] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [a3e78574] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [a3e78574] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [a3e78574] 	
+ DEBUG [a3e78574] Finished in 0.766 seconds with exit status 0 (successful).
+  INFO [5c311946] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [5c311946] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5c311946] Finished in 3.433 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [f7ba9890] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [f7ba9890] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [f7ba9890] Finished in 0.555 seconds with exit status 0 (successful).
+  INFO [8bd6c716] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [8bd6c716] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [8bd6c716] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [8bd6c716] 		HEAD
+  INFO [8bd6c716] Finished in 3.638 seconds with exit status 0 (successful).
+  INFO [b4219ffd] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [b4219ffd] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [b4219ffd] Finished in 3.187 seconds with exit status 0 (successful).
+  INFO [402826b1] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [402826b1] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [402826b1] Finished in 3.318 seconds with exit status 0 (successful).
+  INFO [7f41eeef] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [7f41eeef] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [7f41eeef] Finished in 4.539 seconds with exit status 0 (successful).
+ DEBUG [e90bcf57] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [e90bcf57] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [e90bcf57] Finished in 3.355 seconds with exit status 0 (successful).
+ DEBUG [3a7df813] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [3a7df813] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [3a7df813] Finished in 0.541 seconds with exit status 0 (successful).
+ DEBUG [1b8e952f] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [1b8e952f] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [1b8e952f] Finished in 3.340 seconds with exit status 1 (failed).
+ DEBUG [5d2fbcca] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [5d2fbcca] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [5d2fbcca] Finished in 3.380 seconds with exit status 1 (failed).
+ DEBUG [9c40b033] Running if test ! -d /home/ubuntu/deplot_test; then echo "Directory does not exist '/home/ubuntu/deplot_test'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [9c40b033] Command: if test ! -d /home/ubuntu/deplot_test; then echo "Directory does not exist '/home/ubuntu/deplot_test'" 1>&2; false; fi
+ DEBUG [9c40b033] Finished in 0.546 seconds with exit status 0 (successful).
+  INFO [21df6ea0] Running /usr/bin/env git clone --mirror https://github.com/akashpinnaka/deploy_test.git /home/ubuntu/deplot_test/repo as ubuntu@52.24.162.208
+ DEBUG [21df6ea0] Command: cd /home/ubuntu/deplot_test && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git clone --mirror https://github.com/akashpinnaka/deploy_test.git /home/ubuntu/deplot_test/repo )
+ DEBUG [21df6ea0] 	Cloning into bare repository '/home/ubuntu/deplot_test/repo'...
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	remote: Counting objects: 154, done.[K
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	remote: Compressing objects:   1% (1/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   2% (2/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   3% (3/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   4% (4/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   5% (5/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:
+ DEBUG [21df6ea0] 	   6% (6/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   7% (7/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   8% (8/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:   9% (9/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  10% (10/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  11% (11/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  12% (12/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  13% (13/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  15% (14/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  16% (15/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  17% (16/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  18% (17/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  19% (18/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  20% (19/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  21% (20/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  22% (21/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  23% (22/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  24% (23/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  25% (24/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  26% (25/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  27% (26/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  29% (27/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  30% (28/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  31% (29/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  32% (30/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  33% (31/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  34% (32/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  35% (33/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  36% (34/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  37% (35/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  38% (36/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  39% (37/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  40% (38/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  41% (39/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  43% (40/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  44% (41/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  45% (42/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  46% (43/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  47% (44/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  48% (45/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  49% (46/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  50% (47/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  51% (48/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  52% (49/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  53% (50/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  54% (51/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  55% (52/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  56% (53/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  58% (54/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  59% (55/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  60% (56/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  61% (57/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  62% (58/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  63% (59/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  64% (60/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  65% (61/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  66% (62/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  67% (63/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  68% (64/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  69% (65/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  70% (66/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  72% (67/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  73% (68/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  74% (69/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objec
+ DEBUG [21df6ea0] 	ts:  75% (70/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  76% (71/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  77% (72/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  78% (73/93) 
+ DEBUG [21df6ea0] 	  [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  79% (74/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  80% (75/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  81% (76/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  82% (77/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  83% (78/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  84% (79/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  86% (80/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  87% (81/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  88% (82/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  89% (83/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  90% (84/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  91% (85/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  92% (86/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  93% (87/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  94% (88/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  95% (89/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  96% (90/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  97% (91/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects:  98% (92/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects: 100% (93/93)   [K
+ DEBUG [21df6ea0] 	remote: Compressing objects: 100% (93/93), done.[K
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	remote: Total 154 (delta 48), reused 146 (delta 40), pack-reused 0[K
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	Receiving objects:   0% (1/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   1% (2/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   2% (4/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   3% (5/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   4% (7/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   5% (8/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   6% (10/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   7% (11/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   8% (13/154)   
+ DEBUG [21df6ea0] 	Receiving objects:   9% (14/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  10% (16/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  11% (17/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  12% (19/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  13% (21/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  14% (22/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  15% (24/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  16% (25/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  17% (27/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  18% (28/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  19% (30/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  20% (31/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  21% (33/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  22% (34/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  23% (36/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  24% (37/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  25% (39/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  26% (41/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  27% (42/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  28% (44/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  29% (45/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  30% (47/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  31% (48/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  32% (50/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  33% (51/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  34% (53/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  35% (54/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  36% (56/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  37% (57/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  38% (59/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  39% (61/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  40% (62/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  41% (64/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  42% (65/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  43% (67/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  44% (68/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  45% (70/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  46% (71/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  47% (73/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  48% (74/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  49% (76/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  50% (77/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  51% (79/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  52% (81/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  53% (82/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  54% (84/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  55% (85/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  56% (87/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  57% (88/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  58% (90/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  59% (91/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  60% (93/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  61% (94/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  62% (96/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  63% (98/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  64% (99/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  65% (101/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  66% (102/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  67% (104/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  68% (105/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  69% (107/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  70% (108/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  71% (110/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  72% (111/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  73% (113/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  74% (114/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  75% (116/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  76% (118/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  77% (119/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  78% (121/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  79% (122/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  80% (124/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  81% (125/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  82% (127/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  83% (128/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  84% (130/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  85% (131/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  86% (133/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  87% (134/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  88% (136/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  89% (138/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  90% (139/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  91% (141/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  92% (142/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  93% (144/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  94% (145/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  95% (147/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  96% (148/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  97% (150/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  98% (151/154)   
+ DEBUG [21df6ea0] 	Receiving objects:  99% (153/154)   
+ DEBUG [21df6ea0] 	Receiving objects: 100% (154/154)   
+ DEBUG [21df6ea0] 	Receiving objects: 100% (154/154), 28.40 KiB | 0 bytes/s, done.
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	Resolving deltas:   0% (0/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  16% (8/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  18% (9/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  27% (13/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  31% (15/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  33% (16/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  68% (33/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  70% (34/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  83% (40/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  87% (42/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  91% (44/48)   
+ DEBUG [21df6ea0] 	Resolving deltas:  93% (45/48)   
+ DEBUG [21df6ea0] 	Resolving deltas: 100% (48/48)   
+ DEBUG [21df6ea0] 	Resolving deltas: 100% (48/48), done.
+ DEBUG [21df6ea0] 	
+ DEBUG [21df6ea0] 	Checking connectivity... 
+ DEBUG [21df6ea0] 	done.
+ DEBUG [21df6ea0] 	
+  INFO [21df6ea0] Finished in 1.076 seconds with exit status 0 (successful).
+ DEBUG [e4838db4] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [e4838db4] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [e4838db4] Finished in 3.189 seconds with exit status 0 (successful).
+  INFO [910b1ea5] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [910b1ea5] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [910b1ea5] Finished in 0.518 seconds with exit status 0 (successful).
+  INFO [e2f37f9b] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [e2f37f9b] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e2f37f9b] 	Fetching origin
+ DEBUG [e2f37f9b] 	
+  INFO [e2f37f9b] Finished in 0.698 seconds with exit status 0 (successful).
+ DEBUG [78d67517] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [78d67517] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [78d67517] Finished in 3.480 seconds with exit status 0 (successful).
+  INFO [1f805343] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183234 as ubuntu@52.24.162.208
+ DEBUG [1f805343] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183234 )
+  INFO [1f805343] Finished in 0.564 seconds with exit status 0 (successful).
+  INFO [c250387d] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502183234 as ubuntu@52.24.162.208
+ DEBUG [c250387d] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502183234 )
+  INFO [c250387d] Finished in 0.568 seconds with exit status 0 (successful).
+ DEBUG [e60ecdfe] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [e60ecdfe] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:07:00 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [89ca9253] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [89ca9253] Command: ~/.rvm/bin/rvm version
+ DEBUG [89ca9253] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [89ca9253] 	
+ DEBUG [89ca9253] Finished in 3.552 seconds with exit status 0 (successful).
+ DEBUG [4f578b3a] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [4f578b3a] Command: ~/.rvm/bin/rvm current
+ DEBUG [4f578b3a] 	ruby-2.4.0
+ DEBUG [4f578b3a] 	
+ DEBUG [4f578b3a] Finished in 0.683 seconds with exit status 0 (successful).
+ DEBUG [68aaf51a] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [68aaf51a] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [68aaf51a] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [68aaf51a] 	
+ DEBUG [68aaf51a] Finished in 0.775 seconds with exit status 0 (successful).
+  INFO [69e6b2d2] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [69e6b2d2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [69e6b2d2] Finished in 3.479 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [c8eb8387] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [c8eb8387] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [c8eb8387] Finished in 0.561 seconds with exit status 0 (successful).
+  INFO [77b32636] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [77b32636] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [77b32636] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [77b32636] 		HEAD
+  INFO [77b32636] Finished in 3.573 seconds with exit status 0 (successful).
+  INFO [86f510d8] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [86f510d8] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [86f510d8] Finished in 3.425 seconds with exit status 0 (successful).
+  INFO [0e9a75d0] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [0e9a75d0] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [0e9a75d0] Finished in 3.338 seconds with exit status 0 (successful).
+  INFO [107068b1] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [107068b1] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [107068b1] Finished in 3.215 seconds with exit status 0 (successful).
+ DEBUG [0ce628e7] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [0ce628e7] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [0ce628e7] Finished in 3.424 seconds with exit status 0 (successful).
+ DEBUG [78c2db61] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [78c2db61] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [78c2db61] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG [166fa75b] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [166fa75b] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [166fa75b] Finished in 3.297 seconds with exit status 1 (failed).
+ DEBUG [f87b2410] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [f87b2410] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]
+ DEBUG [f87b2410] Finished in 3.155 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/deplot_test/repo
+ DEBUG [69b4da9a] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [69b4da9a] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [69b4da9a] Finished in 3.284 seconds with exit status 0 (successful).
+  INFO [fc701940] Running /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git as ubuntu@52.24.162.208
+ DEBUG [fc701940] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote set-url origin https://github.com/akashpinnaka/deploy_test.git )
+  INFO [fc701940] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [c763fc52] Running /usr/bin/env git remote update --prune as ubuntu@52.24.162.208
+ DEBUG [c763fc52] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c763fc52] 	Fetching origin
+ DEBUG [c763fc52] 	
+  INFO [c763fc52] Finished in 0.713 seconds with exit status 0 (successful).
+ DEBUG [69a9c1a4] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [69a9c1a4] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [69a9c1a4] Finished in 3.160 seconds with exit status 0 (successful).
+  INFO [5ef98fa3] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732 as ubuntu@52.24.162.208
+ DEBUG [5ef98fa3] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732 )
+  INFO [5ef98fa3] Finished in 0.512 seconds with exit status 0 (successful).
+  INFO [a3db5ad1] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502183732 as ubuntu@52.24.162.208
+ DEBUG [a3db5ad1] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/deplot_test/releases/20170502183732 )
+  INFO [a3db5ad1] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [5886961b] Running if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [5886961b] Command: if test ! -d /home/ubuntu/deplot_test/repo; then echo "Directory does not exist '/home/ubuntu/deplot_test/repo'" 1>&2; false; fi
+ DEBUG [5886961b] Finished in 3.416 seconds with exit status 0 (successful).
+ DEBUG [9d7c2062] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.24.162.208
+ DEBUG [9d7c2062] Command: cd /home/ubuntu/deplot_test/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9d7c2062] 	4a2a35d77112b608b9b27c7e4d248da1ca8c120b
+ DEBUG [9d7c2062] 	
+ DEBUG [9d7c2062] Finished in 0.559 seconds with exit status 0 (successful).
+ DEBUG [cbcb82b7] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [cbcb82b7] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi
+ DEBUG [cbcb82b7] Finished in 3.319 seconds with exit status 0 (successful).
+  INFO [bb778e18] Running /usr/bin/env echo "4a2a35d77112b608b9b27c7e4d248da1ca8c120b" >> REVISION as ubuntu@52.24.162.208
+ DEBUG [bb778e18] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && /usr/bin/env echo "4a2a35d77112b608b9b27c7e4d248da1ca8c120b" >> REVISION
+  INFO [bb778e18] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [56ccf60f] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732/config as ubuntu@52.24.162.208
+ DEBUG [56ccf60f] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732/config
+  INFO [56ccf60f] Finished in 3.192 seconds with exit status 0 (successful).
+ DEBUG [4bbf6887] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [4bbf6887] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml ]
+ DEBUG [4bbf6887] Finished in 0.514 seconds with exit status 1 (failed).
+ DEBUG [c55782f8] Running [ -f /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [c55782f8] Command: [ -f /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml ]
+ DEBUG [c55782f8] Finished in 0.515 seconds with exit status 1 (failed).
+  INFO [63e40f5f] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml as ubuntu@52.24.162.208
+ DEBUG [63e40f5f] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/database.yml /home/ubuntu/deplot_test/releases/20170502183732/config/database.yml
+  INFO [63e40f5f] Finished in 0.515 seconds with exit status 0 (successful).
+ DEBUG [bce5333c] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [bce5333c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml ]
+ DEBUG [bce5333c] Finished in 0.513 seconds with exit status 1 (failed).
+ DEBUG [e3d54b85] Running [ -f /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [e3d54b85] Command: [ -f /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml ]
+ DEBUG [e3d54b85] Finished in 0.513 seconds with exit status 1 (failed).
+  INFO [9c99898e] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml as ubuntu@52.24.162.208
+ DEBUG [9c99898e] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/config/secrets.yml /home/ubuntu/deplot_test/releases/20170502183732/config/secrets.yml
+  INFO [9c99898e] Finished in 0.516 seconds with exit status 0 (successful).
+  INFO [974b76fd] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732 /home/ubuntu/deplot_test/releases/20170502183732/tmp /home/ubuntu/deplot_test/releases/20170502183732/vendor /home/ubuntu/deplot_test/releases/20170502183732/public as ubuntu@52.24.162.208
+ DEBUG [974b76fd] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732 /home/ubuntu/deplot_test/releases/20170502183732/tmp /home/ubuntu/deplot_test/releases/20170502183732/vendor /home/ubuntu/deplot_test/releases/20170502183732/public
+  INFO [974b76fd] Finished in 3.248 seconds with exit status 0 (successful).
+ DEBUG [55a9044c] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/log ] as ubuntu@52.24.162.208
+ DEBUG [55a9044c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/log ]
+ DEBUG [55a9044c] Finished in 0.522 seconds with exit status 1 (failed).
+ DEBUG [c790915e] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/log ] as ubuntu@52.24.162.208
+ DEBUG [c790915e] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/log ]
+ DEBUG [c790915e] Finished in 0.522 seconds with exit status 0 (successful).
+  INFO [48d8d837] Running /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502183732/log as ubuntu@52.24.162.208
+ DEBUG [48d8d837] Command: /usr/bin/env rm -rf /home/ubuntu/deplot_test/releases/20170502183732/log
+  INFO [48d8d837] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [582affb1] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502183732/log as ubuntu@52.24.162.208
+ DEBUG [582affb1] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/releases/20170502183732/log
+  INFO [582affb1] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG [a3ff8122] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [a3ff8122] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids ]
+ DEBUG [a3ff8122] Finished in 0.523 seconds with exit status 1 (failed).
+ DEBUG [f7c228d7] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids ] as ubuntu@52.24.162.208
+ DEBUG [f7c228d7] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids ]
+ DEBUG [f7c228d7] Finished in 0.521 seconds with exit status 1 (failed).
+  INFO [e2e104e3] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids as ubuntu@52.24.162.208
+ DEBUG [e2e104e3] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/releases/20170502183732/tmp/pids
+  INFO [e2e104e3] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG [f0270ffd] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [f0270ffd] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache ]
+ DEBUG [f0270ffd] Finished in 0.524 seconds with exit status 1 (failed).
+ DEBUG [3cd50d9f] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache ] as ubuntu@52.24.162.208
+ DEBUG [3cd50d9f] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache ]
+ DEBUG [3cd50d9f] Finished in 0.522 seconds with exit status 1 (failed).
+  INFO [ace681cc] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache as ubuntu@52.24.162.208
+ DEBUG [ace681cc] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/releases/20170502183732/tmp/cache
+  INFO [ace681cc] Finished in 0.523 seconds with exit status 0 (successful).
+ DEBUG [875594e8] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [875594e8] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets ]
+ DEBUG [875594e8] Finished in 0.521 seconds with exit status 1 (failed).
+ DEBUG [15c2b536] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets ] as ubuntu@52.24.162.208
+ DEBUG [15c2b536] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets ]
+ DEBUG [15c2b536] Finished in 0.526 seconds with exit status 1 (failed).
+  INFO [2145f669] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets as ubuntu@52.24.162.208
+ DEBUG [2145f669] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/releases/20170502183732/tmp/sockets
+  INFO [2145f669] Finished in 0.523 seconds with exit status 0 (successful).
+ DEBUG [b5db2127] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [b5db2127] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle ]
+ DEBUG [b5db2127] Finished in 0.522 seconds with exit status 1 (failed).
+ DEBUG [1d8fba98] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle ] as ubuntu@52.24.162.208
+ DEBUG [1d8fba98] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle ]
+ DEBUG [1d8fba98] Finished in 0.531 seconds with exit status 1 (failed).
+  INFO [4039fd72] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle as ubuntu@52.24.162.208
+ DEBUG [4039fd72] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/releases/20170502183732/vendor/bundle
+  INFO [4039fd72] Finished in 0.523 seconds with exit status 0 (successful).
+ DEBUG [ea077b86] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/system ] as ubuntu@52.24.162.208
+ DEBUG [ea077b86] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/system ]
+ DEBUG [ea077b86] Finished in 0.522 seconds with exit status 1 (failed).
+ DEBUG [ec0813cb] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/system ] as ubuntu@52.24.162.208
+ DEBUG [ec0813cb] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/system ]
+ DEBUG [ec0813cb] Finished in 0.521 seconds with exit status 1 (failed).
+  INFO [160fc6c8] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502183732/public/system as ubuntu@52.24.162.208
+ DEBUG [160fc6c8] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/releases/20170502183732/public/system
+  INFO [160fc6c8] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG [c09b952d] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [c09b952d] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/uploads ]
+ DEBUG [c09b952d] Finished in 0.521 seconds with exit status 1 (failed).
+ DEBUG [f314a610] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/uploads ] as ubuntu@52.24.162.208
+ DEBUG [f314a610] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/uploads ]
+ DEBUG [f314a610] Finished in 0.520 seconds with exit status 1 (failed).
+  INFO [708c7d4e] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502183732/public/uploads as ubuntu@52.24.162.208
+ DEBUG [708c7d4e] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/releases/20170502183732/public/uploads
+  INFO [708c7d4e] Finished in 0.523 seconds with exit status 0 (successful).
+ DEBUG [beb2405c] Running [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [beb2405c] Command: [ -L /home/ubuntu/deplot_test/releases/20170502183732/public/assets ]
+ DEBUG [beb2405c] Finished in 0.522 seconds with exit status 1 (failed).
+ DEBUG [99080e53] Running [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/assets ] as ubuntu@52.24.162.208
+ DEBUG [99080e53] Command: [ -d /home/ubuntu/deplot_test/releases/20170502183732/public/assets ]
+ DEBUG [99080e53] Finished in 0.524 seconds with exit status 1 (failed).
+  INFO [29b6b101] Running /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502183732/public/assets as ubuntu@52.24.162.208
+ DEBUG [29b6b101] Command: /usr/bin/env ln -s /home/ubuntu/deplot_test/shared/public/assets /home/ubuntu/deplot_test/releases/20170502183732/public/assets
+  INFO [29b6b101] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG [08f83be5] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [08f83be5] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi
+ DEBUG [08f83be5] Finished in 3.295 seconds with exit status 0 (successful).
+ DEBUG [f06d8c6e] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle as ubuntu@52.24.162.208
+ DEBUG [f06d8c6e] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle check --path /home/ubuntu/deplot_test/shared/bundle
+ DEBUG [f06d8c6e] 	[31mThe following gems are missing[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rake (12.0.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * concurrent-ruby (1.0.5)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * i18n (0.8.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * minitest (5.10.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * thread_safe (0.3.6)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * tzinfo (1.2.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * activesupport (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * builder (3.2.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * erubis (2.7.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * mini_portile2 (2.1.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * nokogiri (1.7.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rails-dom-testing (2.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * loofah (2.0.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rails-html-sanitizer (1.0.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * actionview (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rack (2.0.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rack-test (0.6.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * actionpack (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * nio4r (2.0.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * websocket-extensions (0.1.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * websocket-driver (0.6.5)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * actioncable (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * globalid (0.4.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * activejob (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * mime-types-data (3.2016.0521)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * mime-types (3.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * mail (2.6.5)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * actionmailer (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * activemodel (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * arel (7.1.4)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * activerecord (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * net-ssh (4.1.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * net-scp (1.2.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sshkit (1.13.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * airbrussh (1.2.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * bindex (0.5.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * byebug (9.0.6)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * capistrano (3.8.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * capistrano-bundler (1.2.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * capistrano-rails (1.2.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * puma (3.8.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * capistrano3-puma (3.1.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * coffee-script-source (1.12.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * execjs (2.7.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * coffee-script (2.4.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * method_source (0.8.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * thor (0.19.4)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * railties (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * coffee-rails (4.2.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * ffi (1.9.18)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * figaro (1.1.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * multi_json (1.12.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * jbuilder (2.6.3)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * jquery-rails (4.3.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rb-fsevent (0.9.8)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rb-inotify (0.9.8)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * listen (3.0.8)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sprockets (3.7.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sprockets-rails (3.2.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * rails (5.0.2)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sass (3.4.23)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * tilt (2.0.7)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sass-rails (5.0.6)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * spring (2.0.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * spring-watcher-listen (2.0.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * sqlite3 (1.3.13)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * turbolinks-source (5.0.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * turbolinks (5.0.1)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * uglifier (3.2.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[31m * web-console (3.5.0)[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [f06d8c6e] 	
+ DEBUG [f06d8c6e] Finished in 1.258 seconds with exit status 1 (failed).
+  INFO [6e5ba3ef] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet as ubuntu@52.24.162.208
+ DEBUG [6e5ba3ef] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && ~/.rvm/bin/rvm ruby-2.4.0 do bundle install --path /home/ubuntu/deplot_test/shared/bundle --without development test --deployment --quiet
+  INFO [6e5ba3ef] Finished in 58.337 seconds with exit status 0 (successful).
+ DEBUG [f0d86f56] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [f0d86f56] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi
+ DEBUG [f0d86f56] Finished in 3.199 seconds with exit status 0 (successful).
+  INFO [216732a7] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle exec rake assets:precompile as ubuntu@52.24.162.208
+ DEBUG [216732a7] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm ruby-2.4.0 do bundle exec rake assets:precompile )
+ DEBUG [216732a7] 	I, [2017-05-02T18:39:26.036481 #5194]  INFO -- : Writing /home/ubuntu/deplot_test/releases/20170502183732/public/assets/application-4a160972215471c54e338c406254874815affbf1fc8cc1cc8d63d1c02fbc2fe3.js
+ DEBUG [216732a7] 	
+ DEBUG [216732a7] 	I, [2017-05-02T18:39:26.036985 #5194]  INFO -- : Writing /home/ubuntu/deplot_test/releases/20170502183732/public/assets/application-4a160972215471c54e338c406254874815affbf1fc8cc1cc8d63d1c02fbc2fe3.js.gz
+ DEBUG [216732a7] 	
+ DEBUG [216732a7] 	I, [2017-05-02T18:39:26.068117 #5194]  INFO -- : Writing /home/ubuntu/deplot_test/releases/20170502183732/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css
+ DEBUG [216732a7] 	
+ DEBUG [216732a7] 	I, [2017-05-02T18:39:26.068754 #5194]  INFO -- : Writing /home/ubuntu/deplot_test/releases/20170502183732/public/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css.gz
+ DEBUG [216732a7] 	
+  INFO [216732a7] Finished in 5.474 seconds with exit status 0 (successful).
+ DEBUG [37c42cbe] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [37c42cbe] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi
+ DEBUG [37c42cbe] Finished in 3.375 seconds with exit status 0 (successful).
+  INFO [a689f96a] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732/assets_manifest_backup as ubuntu@52.24.162.208
+ DEBUG [a689f96a] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && /usr/bin/env mkdir -p /home/ubuntu/deplot_test/releases/20170502183732/assets_manifest_backup
+  INFO [a689f96a] Finished in 0.545 seconds with exit status 0 (successful).
+ DEBUG [e118fa52] Running /usr/bin/env ls /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest* as ubuntu@52.24.162.208
+ DEBUG [e118fa52] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && /usr/bin/env ls /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest*
+ DEBUG [e118fa52] 	/home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest-212ff8a40e5f6ff8d55dab6cf6d493be.json
+ DEBUG [e118fa52] 	
+ DEBUG [e118fa52] Finished in 0.548 seconds with exit status 0 (successful).
+ DEBUG [0ae8474b] Running /usr/bin/env ls /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest* as ubuntu@52.24.162.208
+ DEBUG [0ae8474b] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && /usr/bin/env ls /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest*
+ DEBUG [0ae8474b] 	/home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest-212ff8a40e5f6ff8d55dab6cf6d493be.json
+ DEBUG [0ae8474b] 	
+ DEBUG [0ae8474b] Finished in 0.544 seconds with exit status 0 (successful).
+  INFO [f02f8b2d] Running /usr/bin/env cp /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest-212ff8a40e5f6ff8d55dab6cf6d493be.json /home/ubuntu/deplot_test/releases/20170502183732/assets_manifest_backup as ubuntu@52.24.162.208
+ DEBUG [f02f8b2d] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && /usr/bin/env cp /home/ubuntu/deplot_test/releases/20170502183732/public/assets/.sprockets-manifest-212ff8a40e5f6ff8d55dab6cf6d493be.json /home/ubuntu/deplot_test/releases/20170502183732/assets_manifest_backup
+  INFO [f02f8b2d] Finished in 0.544 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [8e5de603] Running if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi as ubuntu@52.24.162.208
+ DEBUG [8e5de603] Command: if test ! -d /home/ubuntu/deplot_test/releases/20170502183732; then echo "Directory does not exist '/home/ubuntu/deplot_test/releases/20170502183732'" 1>&2; false; fi
+ DEBUG [8e5de603] Finished in 3.430 seconds with exit status 0 (successful).
+  INFO [7fa0aaf8] Running ~/.rvm/bin/rvm ruby-2.4.0 do bundle exec rake db:migrate as ubuntu@52.24.162.208
+ DEBUG [7fa0aaf8] Command: cd /home/ubuntu/deplot_test/releases/20170502183732 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm ruby-2.4.0 do bundle exec rake db:migrate )
+ DEBUG [7fa0aaf8] 	rake aborted!
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	Gem::LoadError: Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_adapters/connection_specification.rb:176:in `rescue in spec'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_adapters/connection_specification.rb:173:in `spec'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_handling.rb:53:in `establish_connection'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/railtie.rb:125:in `block (2 levels) in <class:Railtie>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:43:in `instance_eval'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:43:in `execute_hook'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:49:in `each'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/base.rb:324:in `<module:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/base.rb:24:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.r
+ DEBUG [7fa0aaf8] 	b:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:6:in `<class:MySQLDatabaseTasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:3:in `<module:Tasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:2:in `<module:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:1:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:66:in `<module:DatabaseTasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:37:in `<module:Tasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:4:in `<module:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:3:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.
+ DEBUG [7fa0aaf8] 	2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/railtie.rb:35:in `block (3 levels) in <class:Railtie>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:74:in `load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:74:in `kernel_load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:27:in `run'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli.rb:335:in `exec'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli.rb:20:in `dispatch'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli.rb:11:in `start'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/exe/bundle:32:in `block in <top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/exe/bundle:24:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/bundle:22:in `load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/bundle:22:in `<main>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	Gem::LoadError: pg is not part of the bundle. Add it to Gemfile.
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/rubygems_integration.rb:351:in `block (2 levels) in replace_gem'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_adapters/postgresql_adapter.rb:2:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/connection_handling.rb:53:in `establish_connection'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/railtie.rb:125:in `block (2 levels) in <class:Railtie>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:43:in `instance_eval'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:43:in `execute_hook'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:49:in `each'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/base.rb:324:in `<mod
+ DEBUG [7fa0aaf8] 	ule:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/base.rb:24:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:6:in `<class:MySQLDatabaseTasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:3:in `<module:Tasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:2:in `<module:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/mysql_database_tasks.rb:1:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:66:in `<module:DatabaseTasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tas
+ DEBUG [7fa0aaf8] 	ks.rb:37:in `<module:Tasks>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:4:in `<module:ActiveRecord>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/tasks/database_tasks.rb:3:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/activerecord-5.0.2/lib/active_record/railtie.rb:35:in `block (3 levels) in <class:Railtie>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/deplot_test/shared/bundle/ruby/2.4.0/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:74:in `load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:74:in `kernel_load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli/exec.rb:27:in `run'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli.rb:335:in `exec'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/cli.rb:20:in `dispatch'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.
+ DEBUG [7fa0aaf8] 	6/lib/bundler/cli.rb:11:in `start'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/exe/bundle:32:in `block in <top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/gems/bundler-1.14.6/exe/bundle:24:in `<top (required)>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/bundle:22:in `load'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/bundle:22:in `<main>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	/home/ubuntu/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	Tasks: TOP => db:migrate => db:load_config
+ DEBUG [7fa0aaf8] 	
+ DEBUG [7fa0aaf8] 	(See full trace by running task with --trace)
+ DEBUG [7fa0aaf8] 	

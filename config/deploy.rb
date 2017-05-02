@@ -3,9 +3,9 @@
 lock "3.8.1"
 
 set :application, "deploy_test"
-set :repo_url, "git@example.com:akashpinnaka/deplot_test.git"
+set :repo_url, "https://github.com/akashpinnaka/deploy_test.git"
 set :branch, :master
-set :deploy_to, "/home/deploy/deplot_test"
+set :deploy_to, "/home/ubuntu/deplot_test"
 set :pty, true
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
@@ -32,5 +32,5 @@ set :ssh_options, {
   forward_agent: true,
   auth_methods: ["publickey"],
   user: fetch(:user),
-  keys: ["/home/akash/projects/keys/personal/akashpinnaka/akashpinnaka-key-pair.pem"]
+  keys: ["~/.ssh/akashpinnaka-key-pair.pem"]
 }

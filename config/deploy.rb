@@ -3,7 +3,7 @@
 lock "3.8.1"
 
 set :application, "deploy_test"
-set :repo_url, "https://github.com/akashpinnaka/deploy_test.git"
+set :repo_url, "git@github.com:akashpinnaka/deploy_test.git"
 set :branch, :master
 set :deploy_to, "/home/ubuntu/deplot_test"
 set :pty, true

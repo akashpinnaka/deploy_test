@@ -2275,3 +2275,55 @@ the dependencies in your gemfile changed
  DEBUG [20f830dd] 	
 You have added to the Gemfile:
  DEBUG [20f830dd] 	* pg[0m
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-03 00:41:39 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [72225e28] Running ~/.rvm/bin/rvm version as ubuntu@52.24.162.208
+ DEBUG [72225e28] Command: ~/.rvm/bin/rvm version
+ DEBUG [72225e28] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [72225e28] 	
+ DEBUG [72225e28] Finished in 3.508 seconds with exit status 0 (successful).
+ DEBUG [2391e0b9] Running ~/.rvm/bin/rvm current as ubuntu@52.24.162.208
+ DEBUG [2391e0b9] Command: ~/.rvm/bin/rvm current
+ DEBUG [2391e0b9] 	ruby-2.4.0
+ DEBUG [2391e0b9] 	
+ DEBUG [2391e0b9] Finished in 0.674 seconds with exit status 0 (successful).
+ DEBUG [dd0e2d5b] Running ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version as ubuntu@52.24.162.208
+ DEBUG [dd0e2d5b] Command: ~/.rvm/bin/rvm ruby-2.4.0 do ruby --version
+ DEBUG [dd0e2d5b] 	ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+ DEBUG [dd0e2d5b] 	
+ DEBUG [dd0e2d5b] Finished in 0.768 seconds with exit status 0 (successful).
+  INFO [76326342] Running /usr/bin/env mkdir -p /tmp as ubuntu@52.24.162.208
+ DEBUG [76326342] Command: /usr/bin/env mkdir -p /tmp
+  INFO [76326342] Finished in 3.398 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-deploy_test-production-akash.sh 0.0%
+  INFO Uploading /tmp/git-ssh-deploy_test-production-akash.sh 100.0%
+  INFO [c057adfd] Running /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh as ubuntu@52.24.162.208
+ DEBUG [c057adfd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-deploy_test-production-akash.sh
+  INFO [c057adfd] Finished in 0.550 seconds with exit status 0 (successful).
+  INFO [62b629fd] Running /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD as ubuntu@52.24.162.208
+ DEBUG [62b629fd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-deploy_test-production-akash.sh" ; /usr/bin/env git ls-remote https://github.com/akashpinnaka/deploy_test.git HEAD )
+ DEBUG [62b629fd] 	cc5351d636c9652fd9f3a58c08cf9ced9f3e1b11
+ DEBUG [62b629fd] 		
+ DEBUG [62b629fd] 	HEAD
+  INFO [62b629fd] Finished in 3.503 seconds with exit status 0 (successful).
+  INFO [2703000d] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases as ubuntu@52.24.162.208
+ DEBUG [2703000d] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared /home/ubuntu/deplot_test/releases
+  INFO [2703000d] Finished in 3.291 seconds with exit status 0 (successful).
+  INFO [3d4b8234] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets as ubuntu@52.24.162.208
+ DEBUG [3d4b8234] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/log /home/ubuntu/deplot_test/shared/tmp/pids /home/ubuntu/deplot_test/shared/tmp/cache /home/ubuntu/deplot_test/shared/tmp/sockets /home/ubuntu/deplot_test/shared/vendor/bundle /home/ubuntu/deplot_test/shared/public/system /home/ubuntu/deplot_test/shared/public/uploads /home/ubuntu/deplot_test/shared/public/assets
+  INFO [3d4b8234] Finished in 3.153 seconds with exit status 0 (successful).
+  INFO [66fd8edb] Running /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config as ubuntu@52.24.162.208
+ DEBUG [66fd8edb] Command: /usr/bin/env mkdir -p /home/ubuntu/deplot_test/shared/config
+  INFO [66fd8edb] Finished in 3.280 seconds with exit status 0 (successful).
+ DEBUG [461e7f71] Running [ -f /home/ubuntu/deplot_test/shared/config/database.yml ] as ubuntu@52.24.162.208
+ DEBUG [461e7f71] Command: [ -f /home/ubuntu/deplot_test/shared/config/database.yml ]
+ DEBUG [461e7f71] Finished in 3.457 seconds with exit status 0 (successful).
+ DEBUG [82a8757b] Running [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ] as ubuntu@52.24.162.208
+ DEBUG [82a8757b] Command: [ -f /home/ubuntu/deplot_test/shared/config/secrets.yml ]
+ DEBUG [82a8757b] Finished in 0.557 seconds with exit status 0 (successful).
+ DEBUG [65275093] Running [ -f /home/ubuntu/deplot_test/current/REVISION ] as ubuntu@52.24.162.208
+ DEBUG [65275093] Command: [ -f /home/ubuntu/deplot_test/current/REVISION ]
+ DEBUG [65275093] Finished in 3.155 seconds with exit status 1 (failed).
+ DEBUG [fe9b6393] Running [ -f /home/ubuntu/deplot_test/repo/HEAD ] as ubuntu@52.24.162.208
+ DEBUG [fe9b6393] Command: [ -f /home/ubuntu/deplot_test/repo/HEAD ]

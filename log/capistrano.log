@@ -1,0 +1,41 @@
+# Logfile created on 2017-05-01 23:04:23 +0530 by logger.rb/53141
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:04:23 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [450b7c31] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as ubuntu@52.88.191.158
+ DEBUG [450b7c31] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:36:23 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bf795193] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as ubuntu@52.88.191.158
+ DEBUG [bf795193] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:40:24 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b1a090b8] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as ubuntu@52.88.191.158
+ DEBUG [b1a090b8] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:40:29 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3526c4eb] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as ubuntu@52.88.191.158
+ DEBUG [3526c4eb] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:51:10 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [667980eb] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as deploy@52.88.191.158
+ DEBUG [667980eb] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:55:28 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b08590c8] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as deploy@52.88.191.158
+ DEBUG [b08590c8] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-01 23:55:56 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7b8eede4] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as deploy@52.88.191.158
+ DEBUG [7b8eede4] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-02 00:00:17 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [167386e1] Running [ -d $HOME/.rbenv/versions/2.4.0 ] as deploy@52.88.191.158
+ DEBUG [167386e1] Command: [ -d $HOME/.rbenv/versions/2.4.0 ]
